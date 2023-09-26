@@ -13,4 +13,4 @@ https://github.com/influxdata/telegraf/blob/master/plugins/parsers/grok/README.m
 
 Необходимо поддержать одновременно все файлы логов apache - access.log, error.log, other_vhosts_access.log, а также время загрузки странци как один из элементов данных. Необходимые (но не достаточные) фичи - таблица поиска по всем логом с фильтром, страница отдельной записи в логе, кастомизируемая статистика (по хостам, ip клиентов, кодам ошибок, времени загрузки страниц)
 
-Демка раьоты Python с Influx https://drive.google.com/file/d/16lACe8NXLHdjgf1ChBqrFHPF4a34Xr28/view?usp=drivesdk
+Демка работы Python с Influx: https://drive.google.com/file/d/16lACe8NXLHdjgf1ChBqrFHPF4a34Xr28/view?usp=drivesdk
