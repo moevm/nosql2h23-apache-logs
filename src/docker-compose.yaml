@@ -1,0 +1,12 @@
+version: '3.6'
+services:
+  apache:
+    image: httpd
+    container_name: apache
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - ./http-files:/usr/local/apache2/htdocs:ro
+      - ./httpd.conf:/usr/local/apache2/conf/httpd.conf:ro
+      - ./logs:/usr/local/apache2/logs:rw
