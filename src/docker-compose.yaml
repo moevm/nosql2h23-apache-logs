@@ -24,13 +24,30 @@ services:
       - '8086:8086'
         #volumes:
       #- influxdb_data:/var/lib/influxdb
+  
   influxdb_cli:
     links:
       - influxdb
     image: influxdb
     entrypoint: influx setup --bucket test_bucket -t test_token -o test_org --username=test_username --password=test_password --host=http://influxdb:8086 -f
-
     restart: on-failure:20
     depends_on:
       - influxdb
+
+  telegraf:
+    image: telegraf
+    container_name: telegraf
+    restart: always
+    user: telegraf:1000
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      - ./logs:/var/log/apache2:ro
+      - ./tglog:/usr/local/etc:rw
+    depends_on:
+      - apache
+      - influxdb
+    links:
+      - influxdb
+    ports:
+    - '8125:8125'
 
