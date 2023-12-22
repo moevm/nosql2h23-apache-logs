@@ -10,7 +10,11 @@ services:
     volumes:
       - ./http-files:/usr/local/apache2/htdocs:ro
       - ./httpd.conf:/usr/local/apache2/conf/httpd.conf:ro
+      - ./000-default.conf:/usr/local/apache2/sites-available/000-default.conf:ro
+      - ./tetris1:/var/www/html/tetris1:ro
+      - ./tetris2:/var/www/html/tetris2:ro
       - ./logs:/usr/local/apache2/logs:rw
+    # also, you should add "127.0.0.1 example.com" in your LOCAL /etc/hosts
   
 # INFLUXDB
   influxdb:
