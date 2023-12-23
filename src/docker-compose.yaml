@@ -64,12 +64,18 @@ services:
     image: grafana/grafana
     container_name: grafana-server
     restart: always
+    volumes:
+      - ./provisioning/datasources:/etc/grafana/provisioning/datasources:ro
+      - ./provisioning/dashboards:/etc/grafana/provisioning/dashboards:ro
     depends_on:
       - influxdb
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin123
-      - GF_INSTALL_PLUGINS=
+      - GF_SERVER_HTTP_PORT=3000
+      - INFLUXDB_ORG=test_org
+      - INFLUXDB_BUCKET=test_bucket
+      - INFLUXDB_TOKEN=test_token
     links:
       - influxdb
     ports:
