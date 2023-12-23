@@ -7,9 +7,13 @@ services:
     restart: always
     ports:
       - 8080:80
+      - 8081:8060
     volumes:
+      # - ./hosts_file:/etc/hosts:ro
       - ./http-files:/usr/local/apache2/htdocs:ro
       - ./httpd.conf:/usr/local/apache2/conf/httpd.conf:ro
+      #- ./000-default.conf:/usr/local/apache2/sites-available/000-default.conf:ro
+      - ./tetris1:/usr/local/apache2/htdocs_v2:ro
       - ./logs:/usr/local/apache2/logs:rw
   
 # INFLUXDB
