@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tetris by Zachary V1</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="contentWrapper">
+        <div id="infoTable">
+            <b id="score_name">Name V1</b>
+            <b id='score_field'>SCORE: 0 V1</b>
+            <b id='lvl_field'>LEVEL: 1 V1</b>
+            <b>Leaderboard</b>
+            <table>
+                <tr>
+                    <th>Nickname V1</th>
+                    <th>Score V1</th>
+                </tr>
+                <tr>
+                    <td id="top1user"></td>
+                    <td id="top1score"></td>
+                </tr>
+                <tr>
+                    <td id="top2user"></td>
+                    <td id="top2score"></td>
+                </tr>
+                <tr>
+                    <td id="top3user"></td>
+                    <td id="top3score"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Game">
+            <canvas width="576" height="960" id="Tetris"></canvas>
+        </div>
+        <div id="controls">
+            <div id="Hint">
+                <p>Next tetramino</p>
+                <canvas id="HintBox" width="288" height="240"></canvas>
+            </div>
+            <img src="controls.png">
+            <button id="startBtn">Start V1</button>
+            <button id="resetBtn">Restart V1</button>
+        </div>
+    </div>
+    <div id="NameBlock">
+        <div id="cover"></div>
+        <div class="NameBox" id="NameBox">
+            <label id="NameLabel" for="NameInput">Hi! What's your name? V1</label>
+            <input id="NameInput" name="NameInput" onkeydown="updateName(this)" placeholder=" Johnny Doe" required
+                minlength="4" maxlength="18" size="30" autocomplete="off">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- width 1/4  8/9-->

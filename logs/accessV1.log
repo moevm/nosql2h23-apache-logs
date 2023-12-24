@@ -1,0 +1,7 @@
+172.30.0.1 [24/Dec/2023:13:22:25 +0000] "GET /loadscore.php HTTP/1.1" 8060 337 404 "http://localhost:8060/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+172.30.0.1 [24/Dec/2023:13:22:27 +0000] "GET / HTTP/1.1" 8060 370 304 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+172.30.0.1 [24/Dec/2023:13:22:27 +0000] "GET /loadscore.php HTTP/1.1" 8060 334 404 "http://localhost:8060/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+172.30.0.1 [24/Dec/2023:13:22:27 +0000] "GET / HTTP/1.1" 8060 239 304 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+172.30.0.1 [24/Dec/2023:13:22:28 +0000] "GET /loadscore.php HTTP/1.1" 8060 421 404 "http://localhost:8060/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+172.30.0.1 [24/Dec/2023:13:22:28 +0000] "GET / HTTP/1.1" 8060 219 304 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+172.30.0.1 [24/Dec/2023:13:22:28 +0000] "GET /loadscore.php HTTP/1.1" 8060 231 404 "http://localhost:8060/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"

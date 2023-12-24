@@ -1,0 +1,1813 @@
+2023-12-24T13:21:52Z I! Starting Telegraf 1.28.5 brought to you by InfluxData the makers of InfluxDB
+2023-12-24T13:21:52Z I! Available plugins: 240 inputs, 9 aggregators, 29 processors, 24 parsers, 59 outputs, 5 secret-stores
+2023-12-24T13:21:52Z I! Loaded inputs: tail (2x)
+2023-12-24T13:21:52Z I! Loaded aggregators: 
+2023-12-24T13:21:52Z I! Loaded processors: 
+2023-12-24T13:21:52Z I! Loaded secretstores: 
+2023-12-24T13:21:52Z I! Loaded outputs: file influxdb_v2
+2023-12-24T13:21:52Z I! Tags enabled: host=telegraf
+2023-12-24T13:21:52Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"telegraf", Flush Interval:20s
+2023-12-24T13:21:52Z D! [agent] Initializing plugins
+2023-12-24T13:21:52Z D! [agent] Connecting outputs
+2023-12-24T13:21:52Z D! [agent] Attempting connection to [outputs.influxdb_v2]
+2023-12-24T13:21:52Z D! [agent] Successfully connected to outputs.influxdb_v2
+2023-12-24T13:21:52Z D! [agent] Attempting connection to [outputs.file]
+2023-12-24T13:21:52Z D! [agent] Successfully connected to outputs.file
+2023-12-24T13:21:52Z D! [agent] Starting service inputs
+2023-12-24T13:21:52Z D! [inputs.tail] Tail added for "/var/log/apache2/access.log"
+2023-12-24T13:21:52Z D! [inputs.tail] Tail added for "/var/log/apache2/accessV1.log"
+2023-12-24T13:21:52Z D! [inputs.tail] Tail added for "/var/log/apache2/accessV3.log"
+2023-12-24T13:21:52Z D! [inputs.tail] Tail added for "/var/log/apache2/error.log"
+2023-12-24T13:21:52Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV1.log"
+2023-12-24T13:21:52Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.30.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T13:21:52Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV2.log"
+2023-12-24T13:21:52Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV3.log"
+2023-12-24T13:22:12Z D! [outputs.file] Wrote batch of 10 metrics in 248.499µs
+2023-12-24T13:22:12Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:22:12Z D! [outputs.influxdb_v2] Wrote batch of 10 metrics in 61.61053ms
+2023-12-24T13:22:12Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:22:32Z D! [outputs.file] Wrote batch of 96 metrics in 2.554417ms
+2023-12-24T13:22:32Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:22:32Z D! [outputs.influxdb_v2] Wrote batch of 96 metrics in 21.971104ms
+2023-12-24T13:22:32Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:22:52Z D! [outputs.file] Wrote batch of 32 metrics in 1.129562ms
+2023-12-24T13:22:52Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:22:52Z D! [outputs.influxdb_v2] Wrote batch of 32 metrics in 20.151009ms
+2023-12-24T13:22:52Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:23:12Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:23:12Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:23:32Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:23:32Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:23:52Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:23:52Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:24:12Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:24:12Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:24:32Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:24:32Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:24:52Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:24:52Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:25:12Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:25:12Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:25:21Z D! [agent] Stopping service inputs
+2023-12-24T13:25:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/accessV1.log"
+2023-12-24T13:25:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/accessV3.log"
+2023-12-24T13:25:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/access.log"
+2023-12-24T13:25:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/error.log"
+2023-12-24T13:25:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV1.log"
+2023-12-24T13:25:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV3.log"
+2023-12-24T13:25:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV2.log"
+2023-12-24T13:25:21Z D! [agent] Input channel closed
+2023-12-24T13:25:21Z I! [agent] Hang on, flushing any cached metrics before shutdown
+2023-12-24T13:25:21Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:25:21Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:25:21Z I! [agent] Stopping running outputs
+2023-12-24T13:25:21Z D! [agent] Stopped Successfully
+2023-12-24T13:26:23Z I! Starting Telegraf 1.28.5 brought to you by InfluxData the makers of InfluxDB
+2023-12-24T13:26:23Z I! Available plugins: 240 inputs, 9 aggregators, 29 processors, 24 parsers, 59 outputs, 5 secret-stores
+2023-12-24T13:26:23Z I! Loaded inputs: tail (2x)
+2023-12-24T13:26:23Z I! Loaded aggregators: 
+2023-12-24T13:26:23Z I! Loaded processors: 
+2023-12-24T13:26:23Z I! Loaded secretstores: 
+2023-12-24T13:26:23Z I! Loaded outputs: file influxdb_v2
+2023-12-24T13:26:23Z I! Tags enabled: host=telegraf
+2023-12-24T13:26:23Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"telegraf", Flush Interval:20s
+2023-12-24T13:26:23Z D! [agent] Initializing plugins
+2023-12-24T13:26:23Z D! [agent] Connecting outputs
+2023-12-24T13:26:23Z D! [agent] Attempting connection to [outputs.influxdb_v2]
+2023-12-24T13:26:23Z D! [agent] Successfully connected to outputs.influxdb_v2
+2023-12-24T13:26:23Z D! [agent] Attempting connection to [outputs.file]
+2023-12-24T13:26:23Z D! [agent] Successfully connected to outputs.file
+2023-12-24T13:26:23Z D! [agent] Starting service inputs
+2023-12-24T13:26:23Z D! [inputs.tail] Tail added for "/var/log/apache2/access.log"
+2023-12-24T13:26:23Z D! [inputs.tail] Tail added for "/var/log/apache2/accessV1.log"
+2023-12-24T13:26:23Z D! [inputs.tail] Tail added for "/var/log/apache2/accessV3.log"
+2023-12-24T13:26:23Z D! [inputs.tail] Tail added for "/var/log/apache2/error.log"
+2023-12-24T13:26:23Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV1.log"
+2023-12-24T13:26:23Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.30.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T13:26:23Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV2.log"
+2023-12-24T13:26:23Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV3.log"
+2023-12-24T13:26:23Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.31.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T13:26:43Z D! [outputs.file] Wrote batch of 156 metrics in 1.79935ms
+2023-12-24T13:26:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:26:43Z D! [outputs.influxdb_v2] Wrote batch of 156 metrics in 78.179149ms
+2023-12-24T13:26:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:27:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:27:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:27:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:27:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:27:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:27:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:28:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:28:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:28:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:28:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:28:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:28:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:29:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:29:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:29:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:29:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:29:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:29:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:30:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:30:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:30:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:30:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:30:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:30:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:31:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:31:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:31:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:31:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:31:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:31:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:32:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:32:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:32:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:32:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:32:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:32:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:33:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:33:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:33:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:33:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:33:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:33:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:34:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:34:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:34:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:34:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:34:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:34:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:35:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:35:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:35:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:35:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:35:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:35:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:36:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:36:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:36:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:36:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:36:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:36:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:37:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:37:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:37:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:37:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:37:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:37:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:38:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:38:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:38:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:38:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:38:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:38:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:39:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:39:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:39:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:39:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:39:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:39:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:40:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:40:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:40:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:40:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:40:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:40:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:41:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:41:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:41:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:41:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:41:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:41:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:42:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:42:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:42:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:42:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:42:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:42:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:43:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:43:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:43:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:43:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:43:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:43:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:44:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:44:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:44:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:44:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:44:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:44:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:45:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:45:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:45:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:45:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:45:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:45:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:46:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:46:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:46:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:46:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:46:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:46:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:47:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:47:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:47:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:47:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:47:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:47:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:48:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:48:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:48:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:48:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:48:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:48:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:49:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:49:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:49:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:49:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:49:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:49:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:50:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:50:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:50:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:50:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:50:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:50:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:51:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:51:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:51:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:51:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:51:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:51:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:52:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:52:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:52:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:52:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:52:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:52:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:53:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:53:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:53:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:53:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:53:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:53:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:54:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:54:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:54:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:54:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:54:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:54:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:55:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:55:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:55:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:55:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:55:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:55:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:56:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:56:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:56:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:56:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:56:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:56:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:57:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:57:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:57:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:57:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:57:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:57:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:58:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:58:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:58:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:58:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:58:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:58:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:59:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:59:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:59:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:59:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:59:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T13:59:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:00:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:00:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:00:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:00:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:00:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:00:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:01:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:01:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:01:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:01:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:01:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:01:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:02:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:02:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:02:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:02:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:02:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:02:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:03:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:03:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:03:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:03:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:03:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:03:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:04:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:04:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:04:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:04:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:04:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:04:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:05:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:05:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:05:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:05:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:05:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:05:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:06:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:06:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:06:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:06:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:06:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:06:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:07:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:07:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:07:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:07:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:07:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:07:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:08:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:08:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:08:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:08:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:08:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:08:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:09:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:09:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:09:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:09:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:09:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:09:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:10:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:10:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:10:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:10:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:10:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:10:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:11:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:11:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:11:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:11:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:11:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:11:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:12:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:12:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:12:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:12:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:12:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:12:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:13:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:13:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:13:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:13:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:13:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:13:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:14:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:14:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:14:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:14:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:14:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:14:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:15:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:15:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:15:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:15:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:15:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:15:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:16:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:16:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:16:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:16:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:16:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:16:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:17:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:17:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:17:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:17:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:17:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:17:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:18:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:18:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:18:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:18:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:18:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:18:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:19:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:19:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:19:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:19:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:19:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:19:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:20:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:20:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:20:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:20:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:20:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:20:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:21:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:21:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:21:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:21:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:21:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:21:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:22:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:22:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:22:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:22:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:22:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:22:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:23:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:23:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:23:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:23:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:23:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:23:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:24:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:24:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:24:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:24:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:24:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:24:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:25:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:25:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:25:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:25:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:25:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:25:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:26:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:26:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:26:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:26:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:26:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:26:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:27:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:27:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:27:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:27:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:27:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:27:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:28:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:28:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:28:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:28:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:28:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:28:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:29:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:29:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:29:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:29:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:29:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:29:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:30:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:30:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:30:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:30:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:30:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:30:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:31:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:31:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:31:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:31:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:31:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:31:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:32:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:32:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:32:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:32:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:32:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:32:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:33:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:33:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:33:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:33:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:33:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:33:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:34:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:34:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:34:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:34:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:34:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:34:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:35:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:35:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:35:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:35:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:35:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:35:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:36:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:36:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:36:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:36:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:36:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:36:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:37:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:37:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:37:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:37:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:37:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:37:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:38:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:38:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:38:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:38:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:38:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:38:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:39:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:39:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:39:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:39:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:39:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:39:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:40:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:40:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:40:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:40:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:40:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:40:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:41:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:41:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:41:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:41:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:41:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:41:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:42:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:42:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:42:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:42:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:42:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:42:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:43:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:43:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:43:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:43:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:43:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:43:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:44:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:44:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:44:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:44:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:44:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:44:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:45:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:45:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:45:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:45:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:45:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:45:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:46:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:46:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:46:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:46:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:46:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:46:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:47:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:47:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:47:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:47:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:47:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:47:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:48:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:48:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:48:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:48:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:48:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:48:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:49:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:49:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:49:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:49:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:49:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:49:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:50:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:50:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:50:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:50:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:50:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:50:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:51:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:51:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:51:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:51:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:51:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:51:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:52:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:52:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:52:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:52:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:52:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:52:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:53:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:53:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:53:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:53:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:53:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:53:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:54:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:54:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:54:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:54:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:54:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:54:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:55:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:55:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:55:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:55:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:55:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:55:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:56:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:56:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:56:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:56:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:56:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:56:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:57:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:57:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:57:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:57:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:57:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:57:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:58:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:58:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:58:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:58:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:58:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:58:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:59:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:59:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:59:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:59:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:59:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T14:59:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:00:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:00:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:00:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:00:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:00:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:00:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:01:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:01:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:01:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:01:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:01:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:01:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:02:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:02:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:02:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:02:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:02:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:02:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:03:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:03:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:03:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:03:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:03:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:03:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:04:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:04:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:04:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:04:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:04:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:04:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:05:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:05:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:05:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:05:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:05:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:05:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:06:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:06:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:06:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:06:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:06:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:06:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:07:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:07:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:07:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:07:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:07:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:07:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:08:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:08:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:08:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:08:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:08:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:08:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:09:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:09:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:09:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:09:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:09:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:09:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:10:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:10:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:10:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:10:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:10:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:10:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:11:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:11:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:11:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:11:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:11:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:11:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:12:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:12:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:12:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:12:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:12:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:12:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:13:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:13:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:13:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:13:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:13:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:13:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:14:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:14:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:14:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:14:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:14:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:14:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:15:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:15:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:15:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:15:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:15:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:15:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:16:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:16:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:16:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:16:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:16:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:16:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:17:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:17:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:17:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:17:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:17:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:17:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:18:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:18:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:18:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:18:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:18:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:18:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:19:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:19:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:19:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:19:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:19:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:19:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:20:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:20:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:20:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:20:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:20:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:20:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:21:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:21:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:21:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:21:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:21:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:21:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:22:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:22:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:22:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:22:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:22:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:22:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:23:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:23:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:23:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:23:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:23:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:23:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:24:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:24:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:24:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:24:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:24:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:24:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:25:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:25:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:25:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:25:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:25:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:25:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:26:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:26:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:26:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:26:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:26:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:26:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:27:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:27:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:27:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:27:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:27:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:27:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:28:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:28:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:28:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:28:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:28:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:28:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:29:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:29:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:29:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:29:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:29:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:29:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:30:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:30:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:30:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:30:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:30:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:30:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:31:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:31:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:31:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:31:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:31:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:31:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:32:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:32:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:32:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:32:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:32:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:32:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:33:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:33:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:33:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:33:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:33:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:33:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:34:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:34:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:34:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:34:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:34:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:34:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:35:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:35:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:35:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:35:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:35:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:35:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:36:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:36:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:36:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:36:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:36:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:36:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:37:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:37:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:37:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:37:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:37:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:37:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:38:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:38:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:38:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:38:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:38:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:38:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:39:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:39:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:39:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:39:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:39:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:39:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:40:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:40:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:40:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:40:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:40:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:40:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:41:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:41:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:41:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:41:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:41:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:41:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:42:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:42:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:42:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:42:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:42:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:42:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:43:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:43:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:43:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:43:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:43:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:43:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:44:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:44:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:44:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:44:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:44:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:44:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:45:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:45:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:45:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:45:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:45:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:45:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:46:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:46:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:46:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:46:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:46:43Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:46:43Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:47:03Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:47:03Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:47:23Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:47:23Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:47:44Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:47:44Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:48:04Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:48:04Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:48:24Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:48:24Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:48:44Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:48:44Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:49:04Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:49:04Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:49:24Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:49:24Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:49:44Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:49:44Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:50:04Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:50:04Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:50:24Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:50:24Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:50:44Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:50:44Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:51:04Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:51:04Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:51:24Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:51:24Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:51:44Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:51:44Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:52:04Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:52:04Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:52:24Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:52:24Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:52:44Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:52:44Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:53:04Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:53:04Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:53:24Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:53:24Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:53:44Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:53:44Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:54:04Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:54:04Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:54:06Z D! [agent] Stopping service inputs
+2023-12-24T15:54:06Z D! [inputs.tail] Tail removed for "/var/log/apache2/accessV1.log"
+2023-12-24T15:54:06Z D! [inputs.tail] Tail removed for "/var/log/apache2/accessV3.log"
+2023-12-24T15:54:06Z D! [inputs.tail] Tail removed for "/var/log/apache2/access.log"
+2023-12-24T15:54:06Z D! [inputs.tail] Tail removed for "/var/log/apache2/error.log"
+2023-12-24T15:54:06Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV1.log"
+2023-12-24T15:54:06Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV2.log"
+2023-12-24T15:54:06Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV3.log"
+2023-12-24T15:54:06Z D! [agent] Input channel closed
+2023-12-24T15:54:06Z I! [agent] Hang on, flushing any cached metrics before shutdown
+2023-12-24T15:54:06Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:54:06Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T15:54:06Z I! [agent] Stopping running outputs
+2023-12-24T15:54:06Z D! [agent] Stopped Successfully
+2023-12-24T18:03:38Z I! Starting Telegraf 1.28.5 brought to you by InfluxData the makers of InfluxDB
+2023-12-24T18:03:38Z I! Available plugins: 240 inputs, 9 aggregators, 29 processors, 24 parsers, 59 outputs, 5 secret-stores
+2023-12-24T18:03:38Z I! Loaded inputs: tail (2x)
+2023-12-24T18:03:38Z I! Loaded aggregators: 
+2023-12-24T18:03:38Z I! Loaded processors: 
+2023-12-24T18:03:38Z I! Loaded secretstores: 
+2023-12-24T18:03:38Z I! Loaded outputs: file influxdb_v2
+2023-12-24T18:03:38Z I! Tags enabled: host=telegraf
+2023-12-24T18:03:38Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"telegraf", Flush Interval:20s
+2023-12-24T18:03:38Z D! [agent] Initializing plugins
+2023-12-24T18:03:38Z D! [agent] Connecting outputs
+2023-12-24T18:03:38Z D! [agent] Attempting connection to [outputs.influxdb_v2]
+2023-12-24T18:03:38Z D! [agent] Successfully connected to outputs.influxdb_v2
+2023-12-24T18:03:38Z D! [agent] Attempting connection to [outputs.file]
+2023-12-24T18:03:38Z D! [agent] Successfully connected to outputs.file
+2023-12-24T18:03:38Z D! [agent] Starting service inputs
+2023-12-24T18:03:38Z D! [inputs.tail] Tail added for "/var/log/apache2/access.log"
+2023-12-24T18:03:38Z D! [inputs.tail] Tail added for "/var/log/apache2/accessV1.log"
+2023-12-24T18:03:38Z D! [inputs.tail] Tail added for "/var/log/apache2/accessV3.log"
+2023-12-24T18:03:38Z D! [inputs.tail] Tail added for "/var/log/apache2/error.log"
+2023-12-24T18:03:38Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV1.log"
+2023-12-24T18:03:38Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.30.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T18:03:38Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV2.log"
+2023-12-24T18:03:38Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV3.log"
+2023-12-24T18:03:38Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.31.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T18:03:59Z D! [outputs.file] Wrote batch of 164 metrics in 6.075982ms
+2023-12-24T18:03:59Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:03:59Z D! [outputs.influxdb_v2] Wrote batch of 164 metrics in 18.956949ms
+2023-12-24T18:03:59Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:04:19Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:04:19Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:04:39Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:04:39Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:04:59Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:04:59Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:05:19Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:05:19Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:05:39Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:05:39Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:05:59Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:05:59Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:06:19Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:06:19Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:06:39Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:06:39Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:06:59Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:06:59Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:07:19Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:07:19Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:07:39Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:07:39Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:07:59Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:07:59Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:08:19Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:08:19Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:08:26Z D! [agent] Stopping service inputs
+2023-12-24T18:08:26Z D! [inputs.tail] Tail removed for "/var/log/apache2/accessV3.log"
+2023-12-24T18:08:26Z D! [inputs.tail] Tail removed for "/var/log/apache2/access.log"
+2023-12-24T18:08:26Z D! [inputs.tail] Tail removed for "/var/log/apache2/accessV1.log"
+2023-12-24T18:08:26Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV1.log"
+2023-12-24T18:08:26Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV2.log"
+2023-12-24T18:08:26Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV3.log"
+2023-12-24T18:08:26Z D! [inputs.tail] Tail removed for "/var/log/apache2/error.log"
+2023-12-24T18:08:26Z D! [agent] Input channel closed
+2023-12-24T18:08:26Z I! [agent] Hang on, flushing any cached metrics before shutdown
+2023-12-24T18:08:26Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:08:26Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:08:26Z I! [agent] Stopping running outputs
+2023-12-24T18:08:26Z D! [agent] Stopped Successfully
+2023-12-24T18:08:49Z I! Starting Telegraf 1.28.5 brought to you by InfluxData the makers of InfluxDB
+2023-12-24T18:08:49Z I! Available plugins: 240 inputs, 9 aggregators, 29 processors, 24 parsers, 59 outputs, 5 secret-stores
+2023-12-24T18:08:49Z I! Loaded inputs: tail (2x)
+2023-12-24T18:08:49Z I! Loaded aggregators: 
+2023-12-24T18:08:49Z I! Loaded processors: 
+2023-12-24T18:08:49Z I! Loaded secretstores: 
+2023-12-24T18:08:49Z I! Loaded outputs: file influxdb_v2
+2023-12-24T18:08:49Z I! Tags enabled: host=telegraf
+2023-12-24T18:08:49Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"telegraf", Flush Interval:20s
+2023-12-24T18:08:49Z D! [agent] Initializing plugins
+2023-12-24T18:08:49Z D! [agent] Connecting outputs
+2023-12-24T18:08:49Z D! [agent] Attempting connection to [outputs.influxdb_v2]
+2023-12-24T18:08:49Z D! [agent] Successfully connected to outputs.influxdb_v2
+2023-12-24T18:08:49Z D! [agent] Attempting connection to [outputs.file]
+2023-12-24T18:08:49Z D! [agent] Successfully connected to outputs.file
+2023-12-24T18:08:49Z D! [agent] Starting service inputs
+2023-12-24T18:08:49Z D! [inputs.tail] Tail added for "/var/log/apache2/access.log"
+2023-12-24T18:08:49Z D! [inputs.tail] Tail added for "/var/log/apache2/accessV1.log"
+2023-12-24T18:08:49Z D! [inputs.tail] Tail added for "/var/log/apache2/accessV3.log"
+2023-12-24T18:08:49Z D! [inputs.tail] Tail added for "/var/log/apache2/error.log"
+2023-12-24T18:08:49Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV1.log"
+2023-12-24T18:08:49Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.30.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T18:08:49Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV2.log"
+2023-12-24T18:08:49Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV3.log"
+2023-12-24T18:08:49Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.31.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T18:08:49Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.18.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T18:09:09Z D! [outputs.file] Wrote batch of 174 metrics in 2.094578ms
+2023-12-24T18:09:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:09:09Z D! [outputs.influxdb_v2] Wrote batch of 174 metrics in 83.226835ms
+2023-12-24T18:09:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:09:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:09:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:09:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:09:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:10:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:10:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:10:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:10:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:10:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:10:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:11:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:11:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:11:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:11:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:11:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:11:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:12:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:12:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:12:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:12:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:12:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:12:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:13:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:13:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:13:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:13:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:13:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:13:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:14:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:14:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:14:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:14:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:14:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:14:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:15:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:15:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:15:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:15:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:15:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:15:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:16:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:16:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:16:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:16:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:16:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:16:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:17:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:17:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:17:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:17:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:17:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:17:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:18:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:18:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:18:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:18:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:18:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:18:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:19:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:19:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:19:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:19:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:19:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:19:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:20:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:20:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:20:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:20:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:20:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:20:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:21:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:21:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:21:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:21:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:21:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:21:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:22:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:22:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:22:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:22:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:22:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:22:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:23:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:23:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:23:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:23:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:23:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:23:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:24:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:24:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:24:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:24:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:24:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:24:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:25:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:25:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:25:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:25:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:25:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:25:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:26:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:26:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:26:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:26:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:26:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:26:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:27:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:27:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:27:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:27:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:27:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:27:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:28:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:28:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:28:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:28:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:28:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:28:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:29:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:29:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:29:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:29:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:29:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:29:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:30:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:30:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:30:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:30:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:30:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:30:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:31:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:31:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:31:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:31:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:31:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:31:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:32:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:32:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:32:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:32:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:32:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:32:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:33:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:33:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:33:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:33:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:33:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:33:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:34:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:34:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:34:29Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:34:29Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:34:49Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:34:49Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:35:09Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:35:09Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:35:10Z D! [agent] Stopping service inputs
+2023-12-24T18:35:10Z D! [inputs.tail] Tail removed for "/var/log/apache2/accessV3.log"
+2023-12-24T18:35:10Z D! [inputs.tail] Tail removed for "/var/log/apache2/access.log"
+2023-12-24T18:35:10Z D! [inputs.tail] Tail removed for "/var/log/apache2/accessV1.log"
+2023-12-24T18:35:10Z D! [inputs.tail] Tail removed for "/var/log/apache2/error.log"
+2023-12-24T18:35:10Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV1.log"
+2023-12-24T18:35:10Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV3.log"
+2023-12-24T18:35:10Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV2.log"
+2023-12-24T18:35:10Z D! [agent] Input channel closed
+2023-12-24T18:35:10Z I! [agent] Hang on, flushing any cached metrics before shutdown
+2023-12-24T18:35:10Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:35:10Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:35:10Z I! [agent] Stopping running outputs
+2023-12-24T18:35:10Z D! [agent] Stopped Successfully
+2023-12-24T18:39:02Z I! Starting Telegraf 1.28.5 brought to you by InfluxData the makers of InfluxDB
+2023-12-24T18:39:02Z I! Available plugins: 240 inputs, 9 aggregators, 29 processors, 24 parsers, 59 outputs, 5 secret-stores
+2023-12-24T18:39:02Z I! Loaded inputs: tail (2x)
+2023-12-24T18:39:02Z I! Loaded aggregators: 
+2023-12-24T18:39:02Z I! Loaded processors: 
+2023-12-24T18:39:02Z I! Loaded secretstores: 
+2023-12-24T18:39:02Z I! Loaded outputs: file influxdb_v2
+2023-12-24T18:39:02Z I! Tags enabled: host=telegraf
+2023-12-24T18:39:02Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"telegraf", Flush Interval:20s
+2023-12-24T18:39:02Z D! [agent] Initializing plugins
+2023-12-24T18:39:02Z D! [agent] Connecting outputs
+2023-12-24T18:39:02Z D! [agent] Attempting connection to [outputs.influxdb_v2]
+2023-12-24T18:39:02Z D! [agent] Successfully connected to outputs.influxdb_v2
+2023-12-24T18:39:02Z D! [agent] Attempting connection to [outputs.file]
+2023-12-24T18:39:02Z D! [agent] Successfully connected to outputs.file
+2023-12-24T18:39:02Z D! [agent] Starting service inputs
+2023-12-24T18:39:02Z D! [inputs.tail] Tail added for "/var/log/apache2/access.log"
+2023-12-24T18:39:02Z D! [inputs.tail] Tail added for "/var/log/apache2/accessV1.log"
+2023-12-24T18:39:02Z D! [inputs.tail] Tail added for "/var/log/apache2/accessV3.log"
+2023-12-24T18:39:02Z D! [inputs.tail] Tail added for "/var/log/apache2/error.log"
+2023-12-24T18:39:02Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV1.log"
+2023-12-24T18:39:02Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.30.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T18:39:02Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV2.log"
+2023-12-24T18:39:02Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV3.log"
+2023-12-24T18:39:02Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.31.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T18:39:02Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.18.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T18:39:02Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.19.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T18:39:22Z D! [outputs.file] Wrote batch of 192 metrics in 4.113023ms
+2023-12-24T18:39:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:39:22Z D! [outputs.influxdb_v2] Wrote batch of 192 metrics in 79.893213ms
+2023-12-24T18:39:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:39:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:39:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:40:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:40:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:40:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:40:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:40:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:40:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:41:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:41:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:41:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:41:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:41:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:41:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:42:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:42:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:42:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:42:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:42:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:42:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:43:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:43:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:43:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:43:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:43:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:43:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:44:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:44:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:44:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:44:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:44:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:44:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:45:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:45:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:45:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:45:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:45:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:45:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:46:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:46:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:46:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:46:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:46:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:46:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:47:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:47:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:47:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:47:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:47:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:47:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:48:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:48:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:48:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:48:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:48:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:48:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:49:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:49:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:49:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:49:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:49:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:49:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:50:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:50:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:50:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:50:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:50:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:50:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:51:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:51:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:51:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:51:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:51:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:51:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:52:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:52:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:52:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:52:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:52:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:52:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:53:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:53:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:53:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:53:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:53:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:53:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:54:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:54:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:54:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:54:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:54:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:54:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:55:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:55:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:55:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:55:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:55:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:55:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:56:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:56:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:56:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:56:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:56:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:56:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:57:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:57:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:57:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:57:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:57:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:57:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:58:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:58:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:58:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:58:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:58:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:58:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:59:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:59:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:59:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:59:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:59:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T18:59:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:00:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:00:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:00:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:00:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:00:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:00:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:01:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:01:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:01:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:01:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:01:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:01:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:02:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:02:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:02:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:02:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:02:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:02:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:03:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:03:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:03:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:03:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:03:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:03:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:04:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:04:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:04:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:04:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:04:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:04:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:05:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:05:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:05:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:05:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:05:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:05:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:06:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:06:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:06:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:06:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:06:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:06:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:07:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:07:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:07:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:07:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:07:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:07:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:08:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:08:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:08:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:08:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:08:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:08:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:09:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:09:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:09:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:09:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:09:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:09:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:10:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:10:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:10:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:10:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:10:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:10:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:11:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:11:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:11:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:11:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:11:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:11:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:12:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:12:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:12:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:12:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:12:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:12:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:13:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:13:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:13:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:13:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:13:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:13:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:14:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:14:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:14:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:14:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:14:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:14:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:15:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:15:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:15:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:15:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:15:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:15:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:16:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:16:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:16:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:16:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:16:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:16:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:17:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:17:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:17:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:17:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:17:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:17:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:18:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:18:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:18:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:18:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:18:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:18:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:19:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:19:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:19:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:19:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:19:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:19:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:20:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:20:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:20:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:20:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:20:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:20:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:21:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:21:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:21:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:21:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:21:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:21:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:22:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:22:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:22:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:22:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:22:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:22:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:23:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:23:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:23:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:23:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:23:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:23:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:24:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:24:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:24:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:24:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:24:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:24:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:25:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:25:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:25:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:25:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:25:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:25:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:26:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:26:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:26:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:26:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:26:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:26:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:27:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:27:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:27:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:27:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:27:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:27:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:28:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:28:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:28:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:28:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:28:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:28:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:29:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:29:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:29:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:29:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:29:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:29:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:30:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:30:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:30:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:30:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:30:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:30:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:31:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:31:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:31:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:31:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:31:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:31:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:32:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:32:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:32:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:32:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:32:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:32:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:33:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:33:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:33:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:33:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:33:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:33:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:34:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:34:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:34:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:34:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:34:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:34:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:35:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:35:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:35:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:35:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:35:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:35:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:36:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:36:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:36:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:36:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:36:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:36:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:37:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:37:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:37:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:37:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:37:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:37:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:38:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:38:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:38:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:38:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:38:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:38:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:39:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:39:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:39:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:39:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:39:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:39:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:40:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:40:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:40:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:40:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:40:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:40:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:41:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:41:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:41:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:41:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:41:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:41:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:42:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:42:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:42:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:42:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:42:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:42:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:43:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:43:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:43:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:43:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:43:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:43:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:44:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:44:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:44:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:44:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:44:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:44:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:45:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:45:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:45:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:45:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:45:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:45:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:46:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:46:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:46:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:46:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:46:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:46:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:47:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:47:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:47:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:47:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:47:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:47:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:48:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:48:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:48:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:48:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:48:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:48:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:49:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:49:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:49:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:49:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:49:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:49:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:50:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:50:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:50:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:50:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:50:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:50:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:51:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:51:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:51:22Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:51:22Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:51:42Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:51:42Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:52:02Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:52:02Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:52:21Z D! [agent] Stopping service inputs
+2023-12-24T19:52:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/access.log"
+2023-12-24T19:52:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/accessV1.log"
+2023-12-24T19:52:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/accessV3.log"
+2023-12-24T19:52:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV1.log"
+2023-12-24T19:52:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV3.log"
+2023-12-24T19:52:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/errorV2.log"
+2023-12-24T19:52:21Z D! [inputs.tail] Tail removed for "/var/log/apache2/error.log"
+2023-12-24T19:52:21Z D! [agent] Input channel closed
+2023-12-24T19:52:21Z I! [agent] Hang on, flushing any cached metrics before shutdown
+2023-12-24T19:52:21Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:52:21Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:52:21Z I! [agent] Stopping running outputs
+2023-12-24T19:52:21Z D! [agent] Stopped Successfully
+2023-12-24T19:52:28Z I! Starting Telegraf 1.28.5 brought to you by InfluxData the makers of InfluxDB
+2023-12-24T19:52:28Z I! Available plugins: 240 inputs, 9 aggregators, 29 processors, 24 parsers, 59 outputs, 5 secret-stores
+2023-12-24T19:52:28Z I! Loaded inputs: tail (2x)
+2023-12-24T19:52:28Z I! Loaded aggregators: 
+2023-12-24T19:52:28Z I! Loaded processors: 
+2023-12-24T19:52:28Z I! Loaded secretstores: 
+2023-12-24T19:52:28Z I! Loaded outputs: file influxdb_v2
+2023-12-24T19:52:28Z I! Tags enabled: host=telegraf
+2023-12-24T19:52:28Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"telegraf", Flush Interval:20s
+2023-12-24T19:52:28Z D! [agent] Initializing plugins
+2023-12-24T19:52:28Z D! [agent] Connecting outputs
+2023-12-24T19:52:28Z D! [agent] Attempting connection to [outputs.influxdb_v2]
+2023-12-24T19:52:28Z D! [agent] Successfully connected to outputs.influxdb_v2
+2023-12-24T19:52:28Z D! [agent] Attempting connection to [outputs.file]
+2023-12-24T19:52:28Z D! [agent] Successfully connected to outputs.file
+2023-12-24T19:52:28Z D! [agent] Starting service inputs
+2023-12-24T19:52:28Z D! [inputs.tail] Tail added for "/var/log/apache2/access.log"
+2023-12-24T19:52:28Z D! [inputs.tail] Tail added for "/var/log/apache2/accessV1.log"
+2023-12-24T19:52:28Z D! [inputs.tail] Tail added for "/var/log/apache2/accessV3.log"
+2023-12-24T19:52:28Z D! [inputs.tail] Tail added for "/var/log/apache2/error.log"
+2023-12-24T19:52:28Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV1.log"
+2023-12-24T19:52:28Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.30.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T19:52:28Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV2.log"
+2023-12-24T19:52:28Z D! [inputs.tail] Tail added for "/var/log/apache2/errorV3.log"
+2023-12-24T19:52:28Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.31.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T19:52:28Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.18.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T19:52:28Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.19.0.2. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T19:52:28Z D! [parsers.grok::tail] Grok no match found for: "AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message"
+2023-12-24T19:52:48Z D! [outputs.file] Wrote batch of 210 metrics in 2.797691ms
+2023-12-24T19:52:48Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:52:48Z D! [outputs.influxdb_v2] Wrote batch of 210 metrics in 72.755048ms
+2023-12-24T19:52:48Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:53:08Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:53:08Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:53:28Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:53:28Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:53:48Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:53:48Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:54:08Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:54:08Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:54:28Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:54:28Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:54:48Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:54:48Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:55:08Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:55:08Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:55:28Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:55:28Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:55:48Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:55:48Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:56:08Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:56:08Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:56:28Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:56:28Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:56:48Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:56:48Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:57:08Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:57:08Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:57:28Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:57:28Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:57:48Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:57:48Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:58:08Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:58:08Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:58:28Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:58:28Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:58:48Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:58:48Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:59:08Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:59:08Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:59:28Z D! [outputs.influxdb_v2] Buffer fullness: 0 / 10000 metrics
+2023-12-24T19:59:28Z D! [outputs.file] Buffer fullness: 0 / 10000 metrics
