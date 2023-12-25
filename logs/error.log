@@ -737,3 +737,79 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 [Mon Dec 25 09:30:03.674477 2023] [mpm_event:debug] [pid 1:tid 139838300919680] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
 [Mon Dec 25 09:30:03.674644 2023] [mpm_event:debug] [pid 1:tid 139838300919680] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
 [Mon Dec 25 09:30:03.674727 2023] [mpm_event:debug] [pid 1:tid 139838300919680] event.c(715): Child 2 stopped: pid 17, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 09:54:25.135340 2023] [mpm_event:debug] [pid 1:tid 139718922499968] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 09:54:25.135780 2023] [mpm_event:debug] [pid 1:tid 139718922499968] event.c(740): Child 1 started: pid 9, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 09:54:25.135799 2023] [mpm_event:debug] [pid 8:tid 139718921074368] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:54:25.136170 2023] [mpm_event:debug] [pid 1:tid 139718922499968] event.c(740): Child 2 started: pid 14, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 09:54:25.136185 2023] [mpm_event:notice] [pid 1:tid 139718922499968] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 09:54:25.136191 2023] [mpm_event:info] [pid 1:tid 139718922499968] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 09:54:25.136205 2023] [core:notice] [pid 1:tid 139718922499968] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 09:54:25.136203 2023] [mpm_event:debug] [pid 9:tid 139718921074368] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:54:25.136210 2023] [core:debug] [pid 1:tid 139718922499968] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 09:54:25.136625 2023] [mpm_event:debug] [pid 14:tid 139718921074368] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:55:12.494478 2023] [mpm_event:debug] [pid 8:tid 139718922499968] event.c(575): wake up listener
+[Mon Dec 25 09:55:12.494486 2023] [mpm_event:debug] [pid 9:tid 139718922499968] event.c(575): wake up listener
+[Mon Dec 25 09:55:12.494549 2023] [core:info] [pid 1:tid 139718922499968] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 09:55:12.494555 2023] [mpm_event:debug] [pid 14:tid 139718922499968] event.c(575): wake up listener
+[Mon Dec 25 09:55:12.494566 2023] [mpm_event:notice] [pid 1:tid 139718922499968] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 09:55:13.495540 2023] [mpm_event:debug] [pid 1:tid 139718922499968] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 09:55:13.495672 2023] [mpm_event:debug] [pid 1:tid 139718922499968] event.c(715): Child 1 stopped: pid 9, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 09:55:13.495743 2023] [mpm_event:debug] [pid 1:tid 139718922499968] event.c(715): Child 2 stopped: pid 14, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.20.0.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 09:57:59.136179 2023] [mpm_event:debug] [pid 1:tid 140266668439424] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 09:57:59.136781 2023] [mpm_event:debug] [pid 8:tid 140266667013824] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:57:59.136938 2023] [mpm_event:debug] [pid 1:tid 140266668439424] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 09:57:59.137340 2023] [mpm_event:debug] [pid 10:tid 140266667013824] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:57:59.137340 2023] [mpm_event:debug] [pid 1:tid 140266668439424] event.c(740): Child 2 started: pid 18, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 09:57:59.137377 2023] [mpm_event:notice] [pid 1:tid 140266668439424] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 09:57:59.137384 2023] [mpm_event:info] [pid 1:tid 140266668439424] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 09:57:59.137408 2023] [core:notice] [pid 1:tid 140266668439424] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 09:57:59.137413 2023] [core:debug] [pid 1:tid 140266668439424] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 09:57:59.137939 2023] [mpm_event:debug] [pid 18:tid 140266667013824] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:58:29.782423 2023] [authz_core:debug] [pid 8:tid 140266585454272] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:58:29.782471 2023] [authz_core:debug] [pid 8:tid 140266585454272] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:58:29.782509 2023] [core:info] [pid 8:tid 140266585454272] [client 172.20.0.1:38350] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:58:30.543310 2023] [authz_core:debug] [pid 8:tid 140266442843840] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:58:30.543376 2023] [authz_core:debug] [pid 8:tid 140266442843840] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:58:30.600894 2023] [authz_core:debug] [pid 8:tid 140266577061568] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:58:30.600934 2023] [authz_core:debug] [pid 8:tid 140266577061568] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:58:30.600952 2023] [core:info] [pid 8:tid 140266577061568] [client 172.20.0.1:38350] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:58:31.312616 2023] [authz_core:debug] [pid 8:tid 140266568668864] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:58:31.312659 2023] [authz_core:debug] [pid 8:tid 140266568668864] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:58:31.370146 2023] [authz_core:debug] [pid 8:tid 140266560276160] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:58:31.370211 2023] [authz_core:debug] [pid 8:tid 140266560276160] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:58:31.370238 2023] [core:info] [pid 8:tid 140266560276160] [client 172.20.0.1:38350] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:58:32.071064 2023] [authz_core:debug] [pid 8:tid 140266551883456] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:58:32.071119 2023] [authz_core:debug] [pid 8:tid 140266551883456] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:58:32.129734 2023] [authz_core:debug] [pid 8:tid 140266543490752] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:58:32.129785 2023] [authz_core:debug] [pid 8:tid 140266543490752] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:58:32.129807 2023] [core:info] [pid 8:tid 140266543490752] [client 172.20.0.1:38350] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:58:32.697408 2023] [authz_core:debug] [pid 8:tid 140266535098048] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:58:32.697435 2023] [authz_core:debug] [pid 8:tid 140266535098048] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:58:32.755468 2023] [authz_core:debug] [pid 8:tid 140266451236544] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:58:32.755523 2023] [authz_core:debug] [pid 8:tid 140266451236544] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:58:32.755550 2023] [core:info] [pid 8:tid 140266451236544] [client 172.20.0.1:38350] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:58:32.865521 2023] [authz_core:debug] [pid 8:tid 140266434451136] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:58:32.865553 2023] [authz_core:debug] [pid 8:tid 140266434451136] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:58:32.919847 2023] [authz_core:debug] [pid 8:tid 140266426058432] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:58:32.919883 2023] [authz_core:debug] [pid 8:tid 140266426058432] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:58:32.919903 2023] [core:info] [pid 8:tid 140266426058432] [client 172.20.0.1:38350] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:58:33.014866 2023] [authz_core:debug] [pid 8:tid 140266417665728] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:58:33.014911 2023] [authz_core:debug] [pid 8:tid 140266417665728] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:58:33.078143 2023] [authz_core:debug] [pid 8:tid 140266409273024] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:58:33.078182 2023] [authz_core:debug] [pid 8:tid 140266409273024] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:58:33.078203 2023] [core:info] [pid 8:tid 140266409273024] [client 172.20.0.1:38350] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:58:33.136515 2023] [authz_core:debug] [pid 8:tid 140266400880320] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:58:33.136564 2023] [authz_core:debug] [pid 8:tid 140266400880320] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:58:33.197794 2023] [authz_core:debug] [pid 8:tid 140265511712448] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:58:33.197818 2023] [authz_core:debug] [pid 8:tid 140265511712448] mod_authz_core.c(815): [client 172.20.0.1:38350] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:58:33.197831 2023] [core:info] [pid 8:tid 140265511712448] [client 172.20.0.1:38350] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 10:00:26.893723 2023] [core:info] [pid 1:tid 140266668439424] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 10:00:26.893756 2023] [mpm_event:notice] [pid 1:tid 140266668439424] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 10:00:26.893965 2023] [mpm_event:debug] [pid 8:tid 140266668439424] event.c(575): wake up listener
+[Mon Dec 25 10:00:26.894041 2023] [mpm_event:debug] [pid 10:tid 140266668439424] event.c(575): wake up listener
+[Mon Dec 25 10:00:26.894107 2023] [mpm_event:debug] [pid 18:tid 140266668439424] event.c(575): wake up listener
+[Mon Dec 25 10:00:27.894886 2023] [mpm_event:debug] [pid 1:tid 140266668439424] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 10:00:27.895009 2023] [mpm_event:debug] [pid 1:tid 140266668439424] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 10:00:27.895080 2023] [mpm_event:debug] [pid 1:tid 140266668439424] event.c(715): Child 2 stopped: pid 18, gen 0, active 0/16, total 0/3/16, quiescing 1
