@@ -9,7 +9,6 @@ services:
       - 80:80
       - 8060:8060
       - 8070:8070
-      - 8080:8080
     volumes:
       - ./http-files:/usr/local/apache2/htdocs:ro
       - ./httpd.conf:/usr/local/apache2/conf/httpd.conf:ro

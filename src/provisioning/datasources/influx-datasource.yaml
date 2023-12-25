@@ -3,6 +3,7 @@ apiVersion: 1
 datasources:
   - name: Apache_InfluxDB
     type: influxdb
+    uid: apachelog
     access: proxy
     url: http://influxdb:8086
     jsonData:

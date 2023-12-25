@@ -1,0 +1,739 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.30.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 13:21:52.021483 2023] [mpm_event:debug] [pid 1:tid 140124050966400] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 13:21:52.021888 2023] [mpm_event:debug] [pid 8:tid 140124049524416] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 13:21:52.022017 2023] [mpm_event:debug] [pid 1:tid 140124050966400] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 13:21:52.022430 2023] [mpm_event:debug] [pid 1:tid 140124050966400] event.c(740): Child 2 started: pid 17, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 13:21:52.022446 2023] [mpm_event:notice] [pid 1:tid 140124050966400] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 13:21:52.022451 2023] [mpm_event:info] [pid 1:tid 140124050966400] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 13:21:52.022461 2023] [mpm_event:debug] [pid 10:tid 140124049524416] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 13:21:52.022466 2023] [core:notice] [pid 1:tid 140124050966400] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 13:21:52.022477 2023] [core:debug] [pid 1:tid 140124050966400] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 13:21:52.022853 2023] [mpm_event:debug] [pid 17:tid 140124049524416] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 13:22:16.660032 2023] [authz_core:debug] [pid 17:tid 140124041123520] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Sun Dec 24 13:22:16.660118 2023] [authz_core:debug] [pid 17:tid 140124041123520] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Sun Dec 24 13:22:16.660179 2023] [core:info] [pid 17:tid 140124041123520] [client 172.30.0.1:34188] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Sun Dec 24 13:22:17.480169 2023] [authz_core:debug] [pid 17:tid 140124032722624] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of Require all granted: granted
+[Sun Dec 24 13:22:17.480220 2023] [authz_core:debug] [pid 17:tid 140124032722624] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of <RequireAny>: granted
+[Sun Dec 24 13:22:17.557596 2023] [authz_core:debug] [pid 17:tid 140124024321728] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Sun Dec 24 13:22:17.557625 2023] [authz_core:debug] [pid 17:tid 140124024321728] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Sun Dec 24 13:22:17.557638 2023] [core:info] [pid 17:tid 140124024321728] [client 172.30.0.1:34188] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Sun Dec 24 13:22:17.638817 2023] [authz_core:debug] [pid 17:tid 140124015920832] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of Require all granted: granted
+[Sun Dec 24 13:22:17.638858 2023] [authz_core:debug] [pid 17:tid 140124015920832] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of <RequireAny>: granted
+[Sun Dec 24 13:22:17.711598 2023] [authz_core:debug] [pid 17:tid 140124007519936] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Sun Dec 24 13:22:17.711627 2023] [authz_core:debug] [pid 17:tid 140124007519936] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Sun Dec 24 13:22:17.711640 2023] [core:info] [pid 17:tid 140124007519936] [client 172.30.0.1:34188] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Sun Dec 24 13:22:17.788112 2023] [authz_core:debug] [pid 17:tid 140123999119040] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of Require all granted: granted
+[Sun Dec 24 13:22:17.788142 2023] [authz_core:debug] [pid 17:tid 140123999119040] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of <RequireAny>: granted
+[Sun Dec 24 13:22:17.844850 2023] [authz_core:debug] [pid 17:tid 140123990718144] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Sun Dec 24 13:22:17.844904 2023] [authz_core:debug] [pid 17:tid 140123990718144] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Sun Dec 24 13:22:17.844934 2023] [core:info] [pid 17:tid 140123990718144] [client 172.30.0.1:34188] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Sun Dec 24 13:22:17.900285 2023] [authz_core:debug] [pid 17:tid 140123375138496] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of Require all granted: granted
+[Sun Dec 24 13:22:17.900337 2023] [authz_core:debug] [pid 17:tid 140123375138496] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of <RequireAny>: granted
+[Sun Dec 24 13:22:17.957380 2023] [authz_core:debug] [pid 17:tid 140123509356224] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Sun Dec 24 13:22:17.957435 2023] [authz_core:debug] [pid 17:tid 140123509356224] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Sun Dec 24 13:22:17.957464 2023] [core:info] [pid 17:tid 140123509356224] [client 172.30.0.1:34188] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Sun Dec 24 13:22:22.237518 2023] [authz_core:debug] [pid 17:tid 140123500963520] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of Require all granted: granted
+[Sun Dec 24 13:22:22.237570 2023] [authz_core:debug] [pid 17:tid 140123500963520] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of <RequireAny>: granted
+[Sun Dec 24 13:22:22.310174 2023] [authz_core:debug] [pid 17:tid 140123492570816] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Sun Dec 24 13:22:22.310206 2023] [authz_core:debug] [pid 17:tid 140123492570816] mod_authz_core.c(815): [client 172.30.0.1:34188] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Sun Dec 24 13:22:22.310221 2023] [core:info] [pid 17:tid 140123492570816] [client 172.30.0.1:34188] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Sun Dec 24 13:22:33.230461 2023] [authz_core:debug] [pid 17:tid 140122427221696] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of Require all granted: granted, referer: http://localhost:8080/
+[Sun Dec 24 13:22:33.230499 2023] [authz_core:debug] [pid 17:tid 140122427221696] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost:8080/
+[Sun Dec 24 13:22:33.230514 2023] [core:info] [pid 17:tid 140122427221696] [client 172.30.0.1:34134] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost:8080/
+[Sun Dec 24 13:22:34.100189 2023] [authz_core:debug] [pid 17:tid 140122418828992] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of Require all granted: granted
+[Sun Dec 24 13:22:34.100246 2023] [authz_core:debug] [pid 17:tid 140122418828992] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of <RequireAny>: granted
+[Sun Dec 24 13:22:34.195607 2023] [authz_core:debug] [pid 17:tid 140122410436288] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of Require all granted: granted, referer: http://localhost:8080/
+[Sun Dec 24 13:22:34.195667 2023] [authz_core:debug] [pid 17:tid 140122410436288] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost:8080/
+[Sun Dec 24 13:22:34.195690 2023] [core:info] [pid 17:tid 140122410436288] [client 172.30.0.1:34134] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost:8080/
+[Sun Dec 24 13:22:34.243855 2023] [authz_core:debug] [pid 17:tid 140124041123520] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of Require all granted: granted
+[Sun Dec 24 13:22:34.243894 2023] [authz_core:debug] [pid 17:tid 140124041123520] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of <RequireAny>: granted
+[Sun Dec 24 13:22:34.322926 2023] [authz_core:debug] [pid 17:tid 140124032722624] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of Require all granted: granted, referer: http://localhost:8080/
+[Sun Dec 24 13:22:34.322956 2023] [authz_core:debug] [pid 17:tid 140124032722624] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost:8080/
+[Sun Dec 24 13:22:34.322971 2023] [core:info] [pid 17:tid 140124032722624] [client 172.30.0.1:34134] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost:8080/
+[Sun Dec 24 13:22:34.401573 2023] [authz_core:debug] [pid 17:tid 140124024321728] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of Require all granted: granted
+[Sun Dec 24 13:22:34.401601 2023] [authz_core:debug] [pid 17:tid 140124024321728] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of <RequireAny>: granted
+[Sun Dec 24 13:22:34.455370 2023] [authz_core:debug] [pid 17:tid 140124015920832] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of Require all granted: granted, referer: http://localhost:8080/
+[Sun Dec 24 13:22:34.455417 2023] [authz_core:debug] [pid 17:tid 140124015920832] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost:8080/
+[Sun Dec 24 13:22:34.455442 2023] [core:info] [pid 17:tid 140124015920832] [client 172.30.0.1:34134] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost:8080/
+[Sun Dec 24 13:22:34.554659 2023] [authz_core:debug] [pid 17:tid 140124007519936] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of Require all granted: granted
+[Sun Dec 24 13:22:34.554700 2023] [authz_core:debug] [pid 17:tid 140124007519936] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of <RequireAny>: granted
+[Sun Dec 24 13:22:34.606396 2023] [authz_core:debug] [pid 17:tid 140123999119040] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of Require all granted: granted, referer: http://localhost:8080/
+[Sun Dec 24 13:22:34.606438 2023] [authz_core:debug] [pid 17:tid 140123999119040] mod_authz_core.c(815): [client 172.30.0.1:34134] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost:8080/
+[Sun Dec 24 13:22:34.606458 2023] [core:info] [pid 17:tid 140123999119040] [client 172.30.0.1:34134] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost:8080/
+[Sun Dec 24 13:25:22.179892 2023] [mpm_event:debug] [pid 8:tid 140124050966400] event.c(575): wake up listener
+[Sun Dec 24 13:25:22.179920 2023] [mpm_event:debug] [pid 10:tid 140124050966400] event.c(575): wake up listener
+[Sun Dec 24 13:25:22.179928 2023] [mpm_event:debug] [pid 17:tid 140124050966400] event.c(575): wake up listener
+[Sun Dec 24 13:25:22.179995 2023] [core:info] [pid 1:tid 140124050966400] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 13:25:22.180009 2023] [mpm_event:notice] [pid 1:tid 140124050966400] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 13:25:23.181093 2023] [mpm_event:debug] [pid 1:tid 140124050966400] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 13:25:23.181162 2023] [mpm_event:debug] [pid 1:tid 140124050966400] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 13:25:23.181202 2023] [mpm_event:debug] [pid 1:tid 140124050966400] event.c(715): Child 2 stopped: pid 17, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.31.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 13:26:23.247182 2023] [mpm_event:debug] [pid 1:tid 140554752419712] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 13:26:23.247614 2023] [mpm_event:debug] [pid 8:tid 140554750977728] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 13:26:23.247774 2023] [mpm_event:debug] [pid 1:tid 140554752419712] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 13:26:23.248202 2023] [mpm_event:debug] [pid 1:tid 140554752419712] event.c(740): Child 2 started: pid 18, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 13:26:23.248238 2023] [mpm_event:notice] [pid 1:tid 140554752419712] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 13:26:23.248235 2023] [mpm_event:debug] [pid 10:tid 140554750977728] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 13:26:23.248243 2023] [mpm_event:info] [pid 1:tid 140554752419712] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 13:26:23.248273 2023] [core:notice] [pid 1:tid 140554752419712] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 13:26:23.248280 2023] [core:debug] [pid 1:tid 140554752419712] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 13:26:23.248661 2023] [mpm_event:debug] [pid 18:tid 140554750977728] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 15:54:06.638443 2023] [core:info] [pid 1:tid 140554752419712] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 15:54:06.638483 2023] [mpm_event:notice] [pid 1:tid 140554752419712] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 15:54:06.641569 2023] [mpm_event:debug] [pid 10:tid 140554752419712] event.c(575): wake up listener
+[Sun Dec 24 15:54:06.641820 2023] [mpm_event:debug] [pid 18:tid 140554752419712] event.c(575): wake up listener
+[Sun Dec 24 15:54:06.643320 2023] [mpm_event:debug] [pid 8:tid 140554752419712] event.c(575): wake up listener
+[Sun Dec 24 15:54:07.638728 2023] [mpm_event:debug] [pid 1:tid 140554752419712] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 15:54:07.638893 2023] [mpm_event:debug] [pid 1:tid 140554752419712] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 15:54:07.638958 2023] [mpm_event:debug] [pid 1:tid 140554752419712] event.c(715): Child 2 stopped: pid 18, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.18.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 18:08:48.658428 2023] [mpm_event:debug] [pid 1:tid 140047572834176] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 18:08:48.659459 2023] [mpm_event:debug] [pid 1:tid 140047572834176] event.c(740): Child 1 started: pid 9, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 18:08:48.659896 2023] [mpm_event:debug] [pid 1:tid 140047572834176] event.c(740): Child 2 started: pid 10, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 18:08:48.659927 2023] [mpm_event:notice] [pid 1:tid 140047572834176] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 18:08:48.659933 2023] [mpm_event:info] [pid 1:tid 140047572834176] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 18:08:48.659951 2023] [core:notice] [pid 1:tid 140047572834176] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 18:08:48.659956 2023] [core:debug] [pid 1:tid 140047572834176] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 18:08:48.660302 2023] [mpm_event:debug] [pid 8:tid 140047571392192] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 18:08:48.661117 2023] [mpm_event:debug] [pid 10:tid 140047571392192] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 18:08:48.664805 2023] [mpm_event:debug] [pid 9:tid 140047571392192] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 18:35:10.706062 2023] [mpm_event:debug] [pid 9:tid 140047572834176] event.c(575): wake up listener
+[Sun Dec 24 18:35:10.706075 2023] [mpm_event:debug] [pid 8:tid 140047572834176] event.c(575): wake up listener
+[Sun Dec 24 18:35:10.706084 2023] [mpm_event:debug] [pid 10:tid 140047572834176] event.c(575): wake up listener
+[Sun Dec 24 18:35:10.706156 2023] [core:info] [pid 1:tid 140047572834176] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 18:35:10.706175 2023] [mpm_event:notice] [pid 1:tid 140047572834176] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 18:35:11.707276 2023] [mpm_event:debug] [pid 1:tid 140047572834176] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 18:35:11.707376 2023] [mpm_event:debug] [pid 1:tid 140047572834176] event.c(715): Child 1 stopped: pid 9, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 18:35:11.707433 2023] [mpm_event:debug] [pid 1:tid 140047572834176] event.c(715): Child 2 stopped: pid 10, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.19.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 18:39:02.122675 2023] [mpm_event:debug] [pid 1:tid 139814306817920] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 18:39:02.123126 2023] [mpm_event:debug] [pid 8:tid 139814305375936] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 18:39:02.123269 2023] [mpm_event:debug] [pid 1:tid 139814306817920] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 18:39:02.123702 2023] [mpm_event:debug] [pid 1:tid 139814306817920] event.c(740): Child 2 started: pid 16, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 18:39:02.123745 2023] [mpm_event:notice] [pid 1:tid 139814306817920] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 18:39:02.123754 2023] [mpm_event:info] [pid 1:tid 139814306817920] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 18:39:02.123777 2023] [core:notice] [pid 1:tid 139814306817920] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 18:39:02.123784 2023] [core:debug] [pid 1:tid 139814306817920] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 18:39:02.124443 2023] [mpm_event:debug] [pid 16:tid 139814305375936] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 18:39:02.125105 2023] [mpm_event:debug] [pid 10:tid 139814305375936] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 19:52:22.231009 2023] [mpm_event:debug] [pid 8:tid 139814306817920] event.c(575): wake up listener
+[Sun Dec 24 19:52:22.231017 2023] [mpm_event:debug] [pid 10:tid 139814306817920] event.c(575): wake up listener
+[Sun Dec 24 19:52:22.231028 2023] [mpm_event:debug] [pid 16:tid 139814306817920] event.c(575): wake up listener
+[Sun Dec 24 19:52:22.231111 2023] [core:info] [pid 1:tid 139814306817920] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 19:52:22.231148 2023] [mpm_event:notice] [pid 1:tid 139814306817920] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 19:52:23.231508 2023] [mpm_event:debug] [pid 1:tid 139814306817920] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 19:52:23.231615 2023] [mpm_event:debug] [pid 1:tid 139814306817920] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 19:52:23.231687 2023] [mpm_event:debug] [pid 1:tid 139814306817920] event.c(715): Child 2 stopped: pid 16, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 19:52:28.250022 2023] [mpm_event:debug] [pid 1:tid 139996175361920] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 19:52:28.250529 2023] [mpm_event:debug] [pid 1:tid 139996175361920] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 19:52:28.250529 2023] [mpm_event:debug] [pid 8:tid 139996173919936] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 19:52:28.250955 2023] [mpm_event:debug] [pid 1:tid 139996175361920] event.c(740): Child 2 started: pid 15, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 19:52:28.250981 2023] [mpm_event:notice] [pid 1:tid 139996175361920] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 19:52:28.250988 2023] [mpm_event:info] [pid 1:tid 139996175361920] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 19:52:28.251007 2023] [core:notice] [pid 1:tid 139996175361920] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 19:52:28.251014 2023] [core:debug] [pid 1:tid 139996175361920] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 19:52:28.251009 2023] [mpm_event:debug] [pid 10:tid 139996173919936] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 19:52:28.252311 2023] [mpm_event:debug] [pid 15:tid 139996173919936] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 20:26:32.410717 2023] [mpm_event:debug] [pid 8:tid 139996175361920] event.c(575): wake up listener
+[Sun Dec 24 20:26:32.410735 2023] [mpm_event:debug] [pid 10:tid 139996175361920] event.c(575): wake up listener
+[Sun Dec 24 20:26:32.410759 2023] [mpm_event:debug] [pid 15:tid 139996175361920] event.c(575): wake up listener
+[Sun Dec 24 20:26:32.410846 2023] [core:info] [pid 1:tid 139996175361920] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 20:26:32.411068 2023] [mpm_event:notice] [pid 1:tid 139996175361920] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 20:26:33.411539 2023] [mpm_event:debug] [pid 1:tid 139996175361920] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 20:26:33.411651 2023] [mpm_event:debug] [pid 1:tid 139996175361920] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 20:26:33.411725 2023] [mpm_event:debug] [pid 1:tid 139996175361920] event.c(715): Child 2 stopped: pid 15, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.21.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 20:31:58.094104 2023] [mpm_event:debug] [pid 1:tid 140677402441600] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 20:31:58.094510 2023] [mpm_event:debug] [pid 1:tid 140677402441600] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 20:31:58.094484 2023] [mpm_event:debug] [pid 8:tid 140677400999616] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 20:31:58.094829 2023] [mpm_event:debug] [pid 1:tid 140677402441600] event.c(740): Child 2 started: pid 13, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 20:31:58.094852 2023] [mpm_event:notice] [pid 1:tid 140677402441600] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 20:31:58.094857 2023] [mpm_event:info] [pid 1:tid 140677402441600] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 20:31:58.094871 2023] [core:notice] [pid 1:tid 140677402441600] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 20:31:58.094877 2023] [core:debug] [pid 1:tid 140677402441600] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 20:31:58.094929 2023] [mpm_event:debug] [pid 10:tid 140677400999616] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 20:31:58.095201 2023] [mpm_event:debug] [pid 13:tid 140677400999616] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 20:36:50.980928 2023] [mpm_event:debug] [pid 8:tid 140677402441600] event.c(575): wake up listener
+[Sun Dec 24 20:36:50.981007 2023] [mpm_event:debug] [pid 13:tid 140677402441600] event.c(575): wake up listener
+[Sun Dec 24 20:36:50.981001 2023] [mpm_event:debug] [pid 10:tid 140677402441600] event.c(575): wake up listener
+[Sun Dec 24 20:36:50.981116 2023] [core:info] [pid 1:tid 140677402441600] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 20:36:50.981136 2023] [mpm_event:notice] [pid 1:tid 140677402441600] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 20:36:51.982216 2023] [mpm_event:debug] [pid 1:tid 140677402441600] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 20:36:51.982283 2023] [mpm_event:debug] [pid 1:tid 140677402441600] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 20:36:51.982352 2023] [mpm_event:debug] [pid 1:tid 140677402441600] event.c(715): Child 2 stopped: pid 13, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.22.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 20:36:54.889512 2023] [mpm_event:debug] [pid 1:tid 140511539361664] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 20:36:54.890352 2023] [mpm_event:debug] [pid 8:tid 140511537919680] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 20:36:54.890472 2023] [mpm_event:debug] [pid 1:tid 140511539361664] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 20:36:54.891012 2023] [mpm_event:debug] [pid 1:tid 140511539361664] event.c(740): Child 2 started: pid 15, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 20:36:54.891036 2023] [mpm_event:notice] [pid 1:tid 140511539361664] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 20:36:54.891041 2023] [mpm_event:info] [pid 1:tid 140511539361664] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 20:36:54.891058 2023] [core:notice] [pid 1:tid 140511539361664] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 20:36:54.891063 2023] [core:debug] [pid 1:tid 140511539361664] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 20:36:54.891540 2023] [mpm_event:debug] [pid 10:tid 140511537919680] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 20:36:54.891606 2023] [mpm_event:debug] [pid 15:tid 140511537919680] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 21:46:37.702531 2023] [mpm_event:debug] [pid 8:tid 140511539361664] event.c(575): wake up listener
+[Sun Dec 24 21:46:37.702548 2023] [mpm_event:debug] [pid 10:tid 140511539361664] event.c(575): wake up listener
+[Sun Dec 24 21:46:37.702544 2023] [mpm_event:debug] [pid 15:tid 140511539361664] event.c(575): wake up listener
+[Sun Dec 24 21:46:37.702665 2023] [core:info] [pid 1:tid 140511539361664] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 21:46:37.703048 2023] [mpm_event:notice] [pid 1:tid 140511539361664] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 21:46:38.703536 2023] [mpm_event:debug] [pid 1:tid 140511539361664] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 21:46:38.703638 2023] [mpm_event:debug] [pid 1:tid 140511539361664] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 21:46:38.703699 2023] [mpm_event:debug] [pid 1:tid 140511539361664] event.c(715): Child 2 stopped: pid 15, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.23.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 21:46:41.651206 2023] [mpm_event:debug] [pid 1:tid 139835209967488] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 21:46:41.651650 2023] [mpm_event:debug] [pid 1:tid 139835209967488] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 21:46:41.651664 2023] [mpm_event:debug] [pid 8:tid 139835208525504] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 21:46:41.652070 2023] [mpm_event:debug] [pid 1:tid 139835209967488] event.c(740): Child 2 started: pid 13, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 21:46:41.652090 2023] [mpm_event:notice] [pid 1:tid 139835209967488] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 21:46:41.652096 2023] [mpm_event:info] [pid 1:tid 139835209967488] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 21:46:41.652115 2023] [core:notice] [pid 1:tid 139835209967488] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 21:46:41.652120 2023] [core:debug] [pid 1:tid 139835209967488] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 21:46:41.652158 2023] [mpm_event:debug] [pid 10:tid 139835208525504] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 21:46:41.652644 2023] [mpm_event:debug] [pid 13:tid 139835208525504] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 21:48:39.130017 2023] [mpm_event:debug] [pid 8:tid 139835209967488] event.c(575): wake up listener
+[Sun Dec 24 21:48:39.130024 2023] [mpm_event:debug] [pid 10:tid 139835209967488] event.c(575): wake up listener
+[Sun Dec 24 21:48:39.130038 2023] [mpm_event:debug] [pid 13:tid 139835209967488] event.c(575): wake up listener
+[Sun Dec 24 21:48:39.130099 2023] [core:info] [pid 1:tid 139835209967488] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 21:48:39.130113 2023] [mpm_event:notice] [pid 1:tid 139835209967488] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 21:48:40.131264 2023] [mpm_event:debug] [pid 1:tid 139835209967488] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 21:48:40.131376 2023] [mpm_event:debug] [pid 1:tid 139835209967488] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 21:48:40.131473 2023] [mpm_event:debug] [pid 1:tid 139835209967488] event.c(715): Child 2 stopped: pid 13, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.24.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 21:48:43.002999 2023] [mpm_event:debug] [pid 1:tid 139778912659328] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 21:48:43.003496 2023] [mpm_event:debug] [pid 8:tid 139778911217344] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 21:48:43.003621 2023] [mpm_event:debug] [pid 1:tid 139778912659328] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 21:48:43.004127 2023] [mpm_event:debug] [pid 1:tid 139778912659328] event.c(740): Child 2 started: pid 16, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 21:48:43.004147 2023] [mpm_event:notice] [pid 1:tid 139778912659328] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 21:48:43.004167 2023] [mpm_event:info] [pid 1:tid 139778912659328] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 21:48:43.004183 2023] [core:notice] [pid 1:tid 139778912659328] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 21:48:43.004189 2023] [core:debug] [pid 1:tid 139778912659328] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 21:48:43.004403 2023] [mpm_event:debug] [pid 10:tid 139778911217344] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 21:48:43.004582 2023] [mpm_event:debug] [pid 16:tid 139778911217344] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:15:29.319229 2023] [mpm_event:debug] [pid 8:tid 139778912659328] event.c(575): wake up listener
+[Sun Dec 24 23:15:29.319236 2023] [mpm_event:debug] [pid 10:tid 139778912659328] event.c(575): wake up listener
+[Sun Dec 24 23:15:29.319280 2023] [mpm_event:debug] [pid 16:tid 139778912659328] event.c(575): wake up listener
+[Sun Dec 24 23:15:29.319801 2023] [core:info] [pid 1:tid 139778912659328] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 23:15:29.319822 2023] [mpm_event:notice] [pid 1:tid 139778912659328] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 23:15:30.320714 2023] [mpm_event:debug] [pid 1:tid 139778912659328] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 23:15:30.320882 2023] [mpm_event:debug] [pid 1:tid 139778912659328] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 23:15:30.321013 2023] [mpm_event:debug] [pid 1:tid 139778912659328] event.c(715): Child 2 stopped: pid 16, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.25.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 23:15:33.625925 2023] [mpm_event:debug] [pid 1:tid 139859866109824] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 23:15:33.626329 2023] [mpm_event:debug] [pid 8:tid 139859864667840] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:15:33.626414 2023] [mpm_event:debug] [pid 1:tid 139859866109824] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 23:15:33.626862 2023] [mpm_event:debug] [pid 1:tid 139859866109824] event.c(740): Child 2 started: pid 20, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 23:15:33.626881 2023] [mpm_event:notice] [pid 1:tid 139859866109824] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 23:15:33.626887 2023] [mpm_event:info] [pid 1:tid 139859866109824] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 23:15:33.626905 2023] [core:notice] [pid 1:tid 139859866109824] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 23:15:33.626910 2023] [core:debug] [pid 1:tid 139859866109824] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 23:15:33.627113 2023] [mpm_event:debug] [pid 10:tid 139859864667840] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:15:33.627671 2023] [mpm_event:debug] [pid 20:tid 139859864667840] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:34:25.078211 2023] [mpm_event:debug] [pid 8:tid 139859866109824] event.c(575): wake up listener
+[Sun Dec 24 23:34:25.078226 2023] [mpm_event:debug] [pid 10:tid 139859866109824] event.c(575): wake up listener
+[Sun Dec 24 23:34:25.078330 2023] [core:info] [pid 1:tid 139859866109824] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 23:34:25.078325 2023] [mpm_event:debug] [pid 20:tid 139859866109824] event.c(575): wake up listener
+[Sun Dec 24 23:34:25.078364 2023] [mpm_event:notice] [pid 1:tid 139859866109824] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 23:34:26.079521 2023] [mpm_event:debug] [pid 1:tid 139859866109824] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 23:34:26.079646 2023] [mpm_event:debug] [pid 1:tid 139859866109824] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 23:34:26.079723 2023] [mpm_event:debug] [pid 1:tid 139859866109824] event.c(715): Child 2 stopped: pid 20, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.26.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 23:34:29.103604 2023] [mpm_event:debug] [pid 1:tid 140239156160384] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 23:34:29.104115 2023] [mpm_event:debug] [pid 8:tid 140239154718400] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:34:29.104265 2023] [mpm_event:debug] [pid 1:tid 140239156160384] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 23:34:29.104738 2023] [mpm_event:debug] [pid 1:tid 140239156160384] event.c(740): Child 2 started: pid 12, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 23:34:29.104795 2023] [mpm_event:notice] [pid 1:tid 140239156160384] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 23:34:29.104803 2023] [mpm_event:info] [pid 1:tid 140239156160384] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 23:34:29.104827 2023] [core:notice] [pid 1:tid 140239156160384] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 23:34:29.104833 2023] [core:debug] [pid 1:tid 140239156160384] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 23:34:29.105069 2023] [mpm_event:debug] [pid 10:tid 140239154718400] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:34:29.105467 2023] [mpm_event:debug] [pid 12:tid 140239154718400] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:35:36.238642 2023] [mpm_event:debug] [pid 8:tid 140239156160384] event.c(575): wake up listener
+[Sun Dec 24 23:35:36.238645 2023] [mpm_event:debug] [pid 10:tid 140239156160384] event.c(575): wake up listener
+[Sun Dec 24 23:35:36.238657 2023] [mpm_event:debug] [pid 12:tid 140239156160384] event.c(575): wake up listener
+[Sun Dec 24 23:35:36.238738 2023] [core:info] [pid 1:tid 140239156160384] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 23:35:36.238773 2023] [mpm_event:notice] [pid 1:tid 140239156160384] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 23:35:37.239828 2023] [mpm_event:debug] [pid 1:tid 140239156160384] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 23:35:37.239953 2023] [mpm_event:debug] [pid 1:tid 140239156160384] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 23:35:37.240027 2023] [mpm_event:debug] [pid 1:tid 140239156160384] event.c(715): Child 2 stopped: pid 12, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.27.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 23:37:44.366687 2023] [mpm_event:debug] [pid 1:tid 139812054087552] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 23:37:44.367301 2023] [mpm_event:debug] [pid 8:tid 139812052645568] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:37:44.367662 2023] [mpm_event:debug] [pid 1:tid 139812054087552] event.c(740): Child 1 started: pid 12, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 23:37:44.368295 2023] [mpm_event:debug] [pid 1:tid 139812054087552] event.c(740): Child 2 started: pid 20, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 23:37:44.368323 2023] [mpm_event:notice] [pid 1:tid 139812054087552] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 23:37:44.368330 2023] [mpm_event:info] [pid 1:tid 139812054087552] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 23:37:44.368351 2023] [core:notice] [pid 1:tid 139812054087552] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 23:37:44.368369 2023] [core:debug] [pid 1:tid 139812054087552] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 23:37:44.368856 2023] [mpm_event:debug] [pid 12:tid 139812052645568] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:37:44.370274 2023] [mpm_event:debug] [pid 20:tid 139812052645568] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:38:11.159752 2023] [mpm_event:debug] [pid 8:tid 139812054087552] event.c(575): wake up listener
+[Sun Dec 24 23:38:11.159790 2023] [mpm_event:debug] [pid 20:tid 139812054087552] event.c(575): wake up listener
+[Sun Dec 24 23:38:11.159783 2023] [mpm_event:debug] [pid 12:tid 139812054087552] event.c(575): wake up listener
+[Sun Dec 24 23:38:11.159866 2023] [core:info] [pid 1:tid 139812054087552] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 23:38:11.159882 2023] [mpm_event:notice] [pid 1:tid 139812054087552] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 23:38:12.161004 2023] [mpm_event:debug] [pid 1:tid 139812054087552] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 23:38:12.161122 2023] [mpm_event:debug] [pid 1:tid 139812054087552] event.c(715): Child 1 stopped: pid 12, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 23:38:12.161204 2023] [mpm_event:debug] [pid 1:tid 139812054087552] event.c(715): Child 2 stopped: pid 20, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.28.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 23:38:26.706608 2023] [mpm_event:debug] [pid 1:tid 140391201122176] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 23:38:26.707309 2023] [mpm_event:debug] [pid 1:tid 140391201122176] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 23:38:26.707240 2023] [mpm_event:debug] [pid 8:tid 140391199680192] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:38:26.707823 2023] [mpm_event:debug] [pid 1:tid 140391201122176] event.c(740): Child 2 started: pid 15, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 23:38:26.707851 2023] [mpm_event:notice] [pid 1:tid 140391201122176] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 23:38:26.707859 2023] [mpm_event:info] [pid 1:tid 140391201122176] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 23:38:26.707880 2023] [core:notice] [pid 1:tid 140391201122176] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 23:38:26.707887 2023] [core:debug] [pid 1:tid 140391201122176] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 23:38:26.708030 2023] [mpm_event:debug] [pid 10:tid 140391199680192] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:38:26.710708 2023] [mpm_event:debug] [pid 15:tid 140391199680192] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:38:31.815735 2023] [mpm_event:debug] [pid 8:tid 140391201122176] event.c(575): wake up listener
+[Sun Dec 24 23:38:31.815740 2023] [mpm_event:debug] [pid 10:tid 140391201122176] event.c(575): wake up listener
+[Sun Dec 24 23:38:31.815750 2023] [mpm_event:debug] [pid 15:tid 140391201122176] event.c(575): wake up listener
+[Sun Dec 24 23:38:31.815813 2023] [core:info] [pid 1:tid 140391201122176] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 23:38:31.815831 2023] [mpm_event:notice] [pid 1:tid 140391201122176] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 23:38:32.816987 2023] [mpm_event:debug] [pid 1:tid 140391201122176] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 23:38:32.817503 2023] [mpm_event:debug] [pid 1:tid 140391201122176] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 23:38:32.817600 2023] [mpm_event:debug] [pid 1:tid 140391201122176] event.c(715): Child 2 stopped: pid 15, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.29.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 23:41:28.371951 2023] [mpm_event:debug] [pid 1:tid 139767411357568] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 23:41:28.372363 2023] [mpm_event:debug] [pid 8:tid 139767409915584] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:41:28.372442 2023] [mpm_event:debug] [pid 1:tid 139767411357568] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 23:41:28.372878 2023] [mpm_event:debug] [pid 10:tid 139767409915584] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:41:28.372933 2023] [mpm_event:debug] [pid 1:tid 139767411357568] event.c(740): Child 2 started: pid 19, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 23:41:28.372956 2023] [mpm_event:notice] [pid 1:tid 139767411357568] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 23:41:28.372965 2023] [mpm_event:info] [pid 1:tid 139767411357568] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 23:41:28.372981 2023] [core:notice] [pid 1:tid 139767411357568] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 23:41:28.372988 2023] [core:debug] [pid 1:tid 139767411357568] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 23:41:28.373309 2023] [mpm_event:debug] [pid 19:tid 139767409915584] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:41:36.378186 2023] [mpm_event:debug] [pid 8:tid 139767411357568] event.c(575): wake up listener
+[Sun Dec 24 23:41:36.378198 2023] [mpm_event:debug] [pid 10:tid 139767411357568] event.c(575): wake up listener
+[Sun Dec 24 23:41:36.378214 2023] [mpm_event:debug] [pid 19:tid 139767411357568] event.c(575): wake up listener
+[Sun Dec 24 23:41:36.378272 2023] [core:info] [pid 1:tid 139767411357568] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 23:41:36.378299 2023] [mpm_event:notice] [pid 1:tid 139767411357568] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 23:41:37.379490 2023] [mpm_event:debug] [pid 1:tid 139767411357568] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 23:41:37.379621 2023] [mpm_event:debug] [pid 1:tid 139767411357568] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 23:41:37.379704 2023] [mpm_event:debug] [pid 1:tid 139767411357568] event.c(715): Child 2 stopped: pid 19, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.30.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 23:42:12.526168 2023] [mpm_event:debug] [pid 1:tid 139925823719296] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 23:42:12.526851 2023] [mpm_event:debug] [pid 8:tid 139925822277312] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:42:12.526985 2023] [mpm_event:debug] [pid 1:tid 139925823719296] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 23:42:12.527683 2023] [mpm_event:debug] [pid 1:tid 139925823719296] event.c(740): Child 2 started: pid 21, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 23:42:12.527736 2023] [mpm_event:notice] [pid 1:tid 139925823719296] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 23:42:12.527743 2023] [mpm_event:info] [pid 1:tid 139925823719296] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 23:42:12.527771 2023] [core:notice] [pid 1:tid 139925823719296] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 23:42:12.527778 2023] [core:debug] [pid 1:tid 139925823719296] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 23:42:12.528240 2023] [mpm_event:debug] [pid 10:tid 139925822277312] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:42:12.528918 2023] [mpm_event:debug] [pid 21:tid 139925822277312] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:43:37.337715 2023] [mpm_event:debug] [pid 8:tid 139925823719296] event.c(575): wake up listener
+[Sun Dec 24 23:43:37.337740 2023] [mpm_event:debug] [pid 21:tid 139925823719296] event.c(575): wake up listener
+[Sun Dec 24 23:43:37.337736 2023] [mpm_event:debug] [pid 10:tid 139925823719296] event.c(575): wake up listener
+[Sun Dec 24 23:43:37.337843 2023] [core:info] [pid 1:tid 139925823719296] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 23:43:37.337877 2023] [mpm_event:notice] [pid 1:tid 139925823719296] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 23:43:38.339077 2023] [mpm_event:debug] [pid 1:tid 139925823719296] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 23:43:38.339207 2023] [mpm_event:debug] [pid 1:tid 139925823719296] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 23:43:38.339289 2023] [mpm_event:debug] [pid 1:tid 139925823719296] event.c(715): Child 2 stopped: pid 21, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.31.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 23:44:09.802306 2023] [mpm_event:debug] [pid 1:tid 139853401782144] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 23:44:09.802705 2023] [mpm_event:debug] [pid 8:tid 139853400340160] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:44:09.802869 2023] [mpm_event:debug] [pid 1:tid 139853401782144] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 23:44:09.803304 2023] [mpm_event:debug] [pid 1:tid 139853401782144] event.c(740): Child 2 started: pid 17, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 23:44:09.803316 2023] [mpm_event:debug] [pid 10:tid 139853400340160] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:44:09.803322 2023] [mpm_event:notice] [pid 1:tid 139853401782144] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 23:44:09.803340 2023] [mpm_event:info] [pid 1:tid 139853401782144] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 23:44:09.803357 2023] [core:notice] [pid 1:tid 139853401782144] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 23:44:09.803364 2023] [core:debug] [pid 1:tid 139853401782144] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 23:44:09.803803 2023] [mpm_event:debug] [pid 17:tid 139853400340160] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:44:47.995158 2023] [mpm_event:debug] [pid 8:tid 139853401782144] event.c(575): wake up listener
+[Sun Dec 24 23:44:47.995169 2023] [mpm_event:debug] [pid 10:tid 139853401782144] event.c(575): wake up listener
+[Sun Dec 24 23:44:47.995178 2023] [mpm_event:debug] [pid 17:tid 139853401782144] event.c(575): wake up listener
+[Sun Dec 24 23:44:47.995259 2023] [core:info] [pid 1:tid 139853401782144] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 23:44:47.995281 2023] [mpm_event:notice] [pid 1:tid 139853401782144] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 23:44:48.995512 2023] [mpm_event:debug] [pid 1:tid 139853401782144] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 23:44:48.995619 2023] [mpm_event:debug] [pid 1:tid 139853401782144] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 23:44:48.995686 2023] [mpm_event:debug] [pid 1:tid 139853401782144] event.c(715): Child 2 stopped: pid 17, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.16.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 23:45:00.313653 2023] [mpm_event:debug] [pid 1:tid 140225129150336] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 23:45:00.314212 2023] [mpm_event:debug] [pid 8:tid 140225127708352] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:45:00.314372 2023] [mpm_event:debug] [pid 1:tid 140225129150336] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 23:45:00.314920 2023] [mpm_event:debug] [pid 1:tid 140225129150336] event.c(740): Child 2 started: pid 21, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 23:45:00.314954 2023] [mpm_event:notice] [pid 1:tid 140225129150336] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 23:45:00.314960 2023] [mpm_event:info] [pid 1:tid 140225129150336] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 23:45:00.314982 2023] [core:notice] [pid 1:tid 140225129150336] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 23:45:00.314988 2023] [core:debug] [pid 1:tid 140225129150336] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 23:45:00.316378 2023] [mpm_event:debug] [pid 21:tid 140225127708352] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:45:00.316732 2023] [mpm_event:debug] [pid 10:tid 140225127708352] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:45:09.622908 2023] [mpm_event:debug] [pid 8:tid 140225129150336] event.c(575): wake up listener
+[Sun Dec 24 23:45:09.622930 2023] [mpm_event:debug] [pid 21:tid 140225129150336] event.c(575): wake up listener
+[Sun Dec 24 23:45:09.622923 2023] [mpm_event:debug] [pid 10:tid 140225129150336] event.c(575): wake up listener
+[Sun Dec 24 23:45:09.623027 2023] [core:info] [pid 1:tid 140225129150336] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 23:45:09.623062 2023] [mpm_event:notice] [pid 1:tid 140225129150336] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 23:45:10.623548 2023] [mpm_event:debug] [pid 1:tid 140225129150336] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 23:45:10.623690 2023] [mpm_event:debug] [pid 1:tid 140225129150336] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 23:45:10.623771 2023] [mpm_event:debug] [pid 1:tid 140225129150336] event.c(715): Child 2 stopped: pid 21, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.32.2. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 23:46:38.229826 2023] [mpm_event:debug] [pid 1:tid 140583183693696] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 23:46:38.230269 2023] [mpm_event:debug] [pid 1:tid 140583183693696] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 23:46:38.230223 2023] [mpm_event:debug] [pid 8:tid 140583182251712] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:46:38.230710 2023] [mpm_event:debug] [pid 1:tid 140583183693696] event.c(740): Child 2 started: pid 15, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 23:46:38.230730 2023] [mpm_event:debug] [pid 10:tid 140583182251712] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:46:38.230746 2023] [mpm_event:notice] [pid 1:tid 140583183693696] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 23:46:38.230768 2023] [mpm_event:info] [pid 1:tid 140583183693696] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 23:46:38.230785 2023] [core:notice] [pid 1:tid 140583183693696] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 23:46:38.230791 2023] [core:debug] [pid 1:tid 140583183693696] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 23:46:38.231125 2023] [mpm_event:debug] [pid 15:tid 140583182251712] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:46:53.515839 2023] [core:info] [pid 1:tid 140583183693696] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 23:46:53.515843 2023] [mpm_event:debug] [pid 8:tid 140583183693696] event.c(575): wake up listener
+[Sun Dec 24 23:46:53.515870 2023] [mpm_event:notice] [pid 1:tid 140583183693696] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 23:46:53.515867 2023] [mpm_event:debug] [pid 15:tid 140583183693696] event.c(575): wake up listener
+[Sun Dec 24 23:46:53.515862 2023] [mpm_event:debug] [pid 10:tid 140583183693696] event.c(575): wake up listener
+[Sun Dec 24 23:46:54.517001 2023] [mpm_event:debug] [pid 1:tid 140583183693696] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 23:46:54.517103 2023] [mpm_event:debug] [pid 1:tid 140583183693696] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 23:46:54.517168 2023] [mpm_event:debug] [pid 1:tid 140583183693696] event.c(715): Child 2 stopped: pid 15, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.48.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 23:47:13.853901 2023] [mpm_event:debug] [pid 1:tid 139889490794368] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 23:47:13.854352 2023] [mpm_event:debug] [pid 8:tid 139889489352384] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:47:13.854476 2023] [mpm_event:debug] [pid 1:tid 139889490794368] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 23:47:13.854930 2023] [mpm_event:debug] [pid 10:tid 139889489352384] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:47:13.855003 2023] [mpm_event:debug] [pid 1:tid 139889490794368] event.c(740): Child 2 started: pid 18, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 23:47:13.855043 2023] [mpm_event:notice] [pid 1:tid 139889490794368] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 23:47:13.855050 2023] [mpm_event:info] [pid 1:tid 139889490794368] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 23:47:13.855073 2023] [core:notice] [pid 1:tid 139889490794368] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 23:47:13.855080 2023] [core:debug] [pid 1:tid 139889490794368] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 23:47:13.855746 2023] [mpm_event:debug] [pid 18:tid 139889489352384] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:47:32.053319 2023] [mpm_event:debug] [pid 8:tid 139889490794368] event.c(575): wake up listener
+[Sun Dec 24 23:47:32.053353 2023] [mpm_event:debug] [pid 18:tid 139889490794368] event.c(575): wake up listener
+[Sun Dec 24 23:47:32.053348 2023] [mpm_event:debug] [pid 10:tid 139889490794368] event.c(575): wake up listener
+[Sun Dec 24 23:47:32.053472 2023] [core:info] [pid 1:tid 139889490794368] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Sun Dec 24 23:47:32.053510 2023] [mpm_event:notice] [pid 1:tid 139889490794368] AH00492: caught SIGWINCH, shutting down gracefully
+[Sun Dec 24 23:47:33.054737 2023] [mpm_event:debug] [pid 1:tid 139889490794368] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Sun Dec 24 23:47:33.054861 2023] [mpm_event:debug] [pid 1:tid 139889490794368] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Sun Dec 24 23:47:33.054943 2023] [mpm_event:debug] [pid 1:tid 139889490794368] event.c(715): Child 2 stopped: pid 18, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.64.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 24 23:48:44.103681 2023] [mpm_event:debug] [pid 1:tid 140116586596224] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Sun Dec 24 23:48:44.104249 2023] [mpm_event:debug] [pid 8:tid 140116585154240] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:48:44.104355 2023] [mpm_event:debug] [pid 1:tid 140116586596224] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Sun Dec 24 23:48:44.104832 2023] [mpm_event:debug] [pid 1:tid 140116586596224] event.c(740): Child 2 started: pid 21, gen 0, active 3/16, total 3/3/16
+[Sun Dec 24 23:48:44.104858 2023] [mpm_event:notice] [pid 1:tid 140116586596224] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Sun Dec 24 23:48:44.104864 2023] [mpm_event:info] [pid 1:tid 140116586596224] AH00490: Server built: Nov 21 2023 13:21:54
+[Sun Dec 24 23:48:44.104886 2023] [core:notice] [pid 1:tid 140116586596224] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun Dec 24 23:48:44.104892 2023] [core:debug] [pid 1:tid 140116586596224] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Sun Dec 24 23:48:44.105169 2023] [mpm_event:debug] [pid 10:tid 140116585154240] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Sun Dec 24 23:48:44.105574 2023] [mpm_event:debug] [pid 21:tid 140116585154240] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 00:13:25.667430 2023] [mpm_event:debug] [pid 8:tid 140116586596224] event.c(575): wake up listener
+[Mon Dec 25 00:13:25.667443 2023] [mpm_event:debug] [pid 10:tid 140116586596224] event.c(575): wake up listener
+[Mon Dec 25 00:13:25.667488 2023] [mpm_event:debug] [pid 21:tid 140116586596224] event.c(575): wake up listener
+[Mon Dec 25 00:13:25.667570 2023] [core:info] [pid 1:tid 140116586596224] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 00:13:25.667584 2023] [mpm_event:notice] [pid 1:tid 140116586596224] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 00:13:26.668703 2023] [mpm_event:debug] [pid 1:tid 140116586596224] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 00:13:26.668800 2023] [mpm_event:debug] [pid 1:tid 140116586596224] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 00:13:26.668864 2023] [mpm_event:debug] [pid 1:tid 140116586596224] event.c(715): Child 2 stopped: pid 21, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.80.3. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 00:44:40.977806 2023] [mpm_event:debug] [pid 1:tid 139796790646656] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 00:44:40.978310 2023] [mpm_event:debug] [pid 1:tid 139796790646656] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 00:44:40.978242 2023] [mpm_event:debug] [pid 8:tid 139796789204672] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 00:44:40.978694 2023] [mpm_event:debug] [pid 1:tid 139796790646656] event.c(740): Child 2 started: pid 15, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 00:44:40.978708 2023] [mpm_event:notice] [pid 1:tid 139796790646656] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 00:44:40.978713 2023] [mpm_event:info] [pid 1:tid 139796790646656] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 00:44:40.978731 2023] [core:notice] [pid 1:tid 139796790646656] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 00:44:40.978737 2023] [core:debug] [pid 1:tid 139796790646656] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 00:44:40.978748 2023] [mpm_event:debug] [pid 10:tid 139796789204672] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 00:44:40.979248 2023] [mpm_event:debug] [pid 15:tid 139796789204672] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 00:47:04.915520 2023] [mpm_event:debug] [pid 8:tid 139796790646656] event.c(575): wake up listener
+[Mon Dec 25 00:47:04.915552 2023] [mpm_event:debug] [pid 10:tid 139796790646656] event.c(575): wake up listener
+[Mon Dec 25 00:47:04.915556 2023] [mpm_event:debug] [pid 15:tid 139796790646656] event.c(575): wake up listener
+[Mon Dec 25 00:47:04.915617 2023] [core:info] [pid 1:tid 139796790646656] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 00:47:04.915632 2023] [mpm_event:notice] [pid 1:tid 139796790646656] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 00:47:05.916466 2023] [mpm_event:debug] [pid 1:tid 139796790646656] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 00:47:05.916557 2023] [mpm_event:debug] [pid 1:tid 139796790646656] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 00:47:05.916621 2023] [mpm_event:debug] [pid 1:tid 139796790646656] event.c(715): Child 2 stopped: pid 15, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.96.3. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 00:47:09.572942 2023] [mpm_event:debug] [pid 1:tid 140022678235008] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 00:47:09.573475 2023] [mpm_event:debug] [pid 8:tid 140022676793024] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 00:47:09.573596 2023] [mpm_event:debug] [pid 1:tid 140022678235008] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 00:47:09.574117 2023] [mpm_event:debug] [pid 1:tid 140022678235008] event.c(740): Child 2 started: pid 15, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 00:47:09.574140 2023] [mpm_event:notice] [pid 1:tid 140022678235008] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 00:47:09.574146 2023] [mpm_event:info] [pid 1:tid 140022678235008] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 00:47:09.574166 2023] [core:notice] [pid 1:tid 140022678235008] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 00:47:09.574171 2023] [core:debug] [pid 1:tid 140022678235008] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 00:47:09.574787 2023] [mpm_event:debug] [pid 10:tid 140022676793024] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 00:47:09.574789 2023] [mpm_event:debug] [pid 15:tid 140022676793024] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 00:51:23.627217 2023] [mpm_event:debug] [pid 8:tid 140022678235008] event.c(575): wake up listener
+[Mon Dec 25 00:51:23.627347 2023] [mpm_event:debug] [pid 10:tid 140022678235008] event.c(575): wake up listener
+[Mon Dec 25 00:51:23.627332 2023] [mpm_event:debug] [pid 15:tid 140022678235008] event.c(575): wake up listener
+[Mon Dec 25 00:51:23.627425 2023] [core:info] [pid 1:tid 140022678235008] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 00:51:23.627440 2023] [mpm_event:notice] [pid 1:tid 140022678235008] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 00:51:24.628522 2023] [mpm_event:debug] [pid 1:tid 140022678235008] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 00:51:24.628590 2023] [mpm_event:debug] [pid 1:tid 140022678235008] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 00:51:24.628634 2023] [mpm_event:debug] [pid 1:tid 140022678235008] event.c(715): Child 2 stopped: pid 15, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.112.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 00:51:29.384559 2023] [mpm_event:debug] [pid 1:tid 140239937472384] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 00:51:29.385163 2023] [mpm_event:debug] [pid 1:tid 140239937472384] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 00:51:29.385074 2023] [mpm_event:debug] [pid 8:tid 140239936030400] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 00:51:29.385603 2023] [mpm_event:debug] [pid 1:tid 140239937472384] event.c(740): Child 2 started: pid 14, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 00:51:29.385617 2023] [mpm_event:notice] [pid 1:tid 140239937472384] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 00:51:29.385623 2023] [mpm_event:info] [pid 1:tid 140239937472384] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 00:51:29.385646 2023] [core:notice] [pid 1:tid 140239937472384] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 00:51:29.385652 2023] [core:debug] [pid 1:tid 140239937472384] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 00:51:29.386540 2023] [mpm_event:debug] [pid 14:tid 140239936030400] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 00:51:29.387670 2023] [mpm_event:debug] [pid 10:tid 140239936030400] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 00:59:26.021817 2023] [mpm_event:debug] [pid 8:tid 140239937472384] event.c(575): wake up listener
+[Mon Dec 25 00:59:26.021928 2023] [mpm_event:debug] [pid 14:tid 140239937472384] event.c(575): wake up listener
+[Mon Dec 25 00:59:26.022022 2023] [mpm_event:debug] [pid 10:tid 140239937472384] event.c(575): wake up listener
+[Mon Dec 25 00:59:26.022120 2023] [core:info] [pid 1:tid 140239937472384] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 00:59:26.022139 2023] [mpm_event:notice] [pid 1:tid 140239937472384] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 00:59:27.023453 2023] [mpm_event:debug] [pid 1:tid 140239937472384] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 00:59:27.023573 2023] [mpm_event:debug] [pid 1:tid 140239937472384] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 00:59:27.023648 2023] [mpm_event:debug] [pid 1:tid 140239937472384] event.c(715): Child 2 stopped: pid 14, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.128.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 00:59:30.629865 2023] [mpm_event:debug] [pid 1:tid 139622772074368] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 00:59:30.630347 2023] [mpm_event:debug] [pid 1:tid 139622772074368] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 00:59:30.630291 2023] [mpm_event:debug] [pid 8:tid 139622770632384] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 00:59:30.630720 2023] [mpm_event:debug] [pid 1:tid 139622772074368] event.c(740): Child 2 started: pid 16, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 00:59:30.630739 2023] [mpm_event:notice] [pid 1:tid 139622772074368] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 00:59:30.630744 2023] [mpm_event:info] [pid 1:tid 139622772074368] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 00:59:30.630761 2023] [core:notice] [pid 1:tid 139622772074368] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 00:59:30.630767 2023] [core:debug] [pid 1:tid 139622772074368] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 00:59:30.631171 2023] [mpm_event:debug] [pid 10:tid 139622770632384] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 00:59:30.631240 2023] [mpm_event:debug] [pid 16:tid 139622770632384] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 01:20:05.576725 2023] [mpm_event:debug] [pid 8:tid 139622772074368] event.c(575): wake up listener
+[Mon Dec 25 01:20:05.576914 2023] [mpm_event:debug] [pid 16:tid 139622772074368] event.c(575): wake up listener
+[Mon Dec 25 01:20:05.576908 2023] [mpm_event:debug] [pid 10:tid 139622772074368] event.c(575): wake up listener
+[Mon Dec 25 01:20:05.577327 2023] [core:info] [pid 1:tid 139622772074368] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 01:20:05.577368 2023] [mpm_event:notice] [pid 1:tid 139622772074368] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 01:20:06.578518 2023] [mpm_event:debug] [pid 1:tid 139622772074368] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 01:20:06.578653 2023] [mpm_event:debug] [pid 1:tid 139622772074368] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 01:20:06.578746 2023] [mpm_event:debug] [pid 1:tid 139622772074368] event.c(715): Child 2 stopped: pid 16, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.144.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 01:20:09.775151 2023] [mpm_event:debug] [pid 1:tid 140038186563456] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 01:20:09.775954 2023] [mpm_event:debug] [pid 8:tid 140038185121472] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 01:20:09.776077 2023] [mpm_event:debug] [pid 1:tid 140038186563456] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 01:20:09.776608 2023] [mpm_event:debug] [pid 1:tid 140038186563456] event.c(740): Child 2 started: pid 15, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 01:20:09.776640 2023] [mpm_event:notice] [pid 1:tid 140038186563456] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 01:20:09.776648 2023] [mpm_event:info] [pid 1:tid 140038186563456] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 01:20:09.776671 2023] [core:notice] [pid 1:tid 140038186563456] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 01:20:09.776677 2023] [core:debug] [pid 1:tid 140038186563456] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 01:20:09.776844 2023] [mpm_event:debug] [pid 10:tid 140038185121472] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 01:20:09.777400 2023] [mpm_event:debug] [pid 15:tid 140038185121472] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 01:20:29.594409 2023] [authz_core:debug] [pid 10:tid 140038176720576] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 01:20:29.594488 2023] [authz_core:debug] [pid 10:tid 140038176720576] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 01:20:29.664874 2023] [authz_core:debug] [pid 10:tid 140038168319680] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 01:20:29.664919 2023] [authz_core:debug] [pid 10:tid 140038168319680] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 01:20:29.664941 2023] [core:info] [pid 10:tid 140038168319680] [client 192.168.144.1:46702] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 01:20:29.770129 2023] [authz_core:debug] [pid 10:tid 140038159918784] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 01:20:29.770199 2023] [authz_core:debug] [pid 10:tid 140038159918784] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 01:20:29.770229 2023] [core:info] [pid 10:tid 140038159918784] [client 192.168.144.1:46702] AH00128: File does not exist: /usr/local/apache2/htdocs/favicon.ico, referer: http://localhost/
+[Mon Dec 25 01:20:30.587693 2023] [authz_core:debug] [pid 10:tid 140037945554624] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 01:20:30.587764 2023] [authz_core:debug] [pid 10:tid 140037945554624] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 01:20:30.640968 2023] [authz_core:debug] [pid 10:tid 140037920376512] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 01:20:30.641010 2023] [authz_core:debug] [pid 10:tid 140037920376512] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 01:20:30.641031 2023] [core:info] [pid 10:tid 140037920376512] [client 192.168.144.1:46702] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 01:20:31.377374 2023] [authz_core:debug] [pid 10:tid 140037928769216] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 01:20:31.377415 2023] [authz_core:debug] [pid 10:tid 140037928769216] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 01:20:31.436803 2023] [authz_core:debug] [pid 10:tid 140037937161920] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 01:20:31.436850 2023] [authz_core:debug] [pid 10:tid 140037937161920] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 01:20:31.436870 2023] [core:info] [pid 10:tid 140037937161920] [client 192.168.144.1:46702] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 01:20:32.190326 2023] [authz_core:debug] [pid 10:tid 140037911983808] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 01:20:32.190367 2023] [authz_core:debug] [pid 10:tid 140037911983808] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 01:20:32.263982 2023] [authz_core:debug] [pid 10:tid 140037903591104] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 01:20:32.264020 2023] [authz_core:debug] [pid 10:tid 140037903591104] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 01:20:32.264036 2023] [core:info] [pid 10:tid 140037903591104] [client 192.168.144.1:46702] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 01:20:32.961161 2023] [authz_core:debug] [pid 10:tid 140037895198400] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 01:20:32.961229 2023] [authz_core:debug] [pid 10:tid 140037895198400] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 01:20:33.039375 2023] [authz_core:debug] [pid 10:tid 140037811336896] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 01:20:33.039441 2023] [authz_core:debug] [pid 10:tid 140037811336896] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 01:20:33.039464 2023] [core:info] [pid 10:tid 140037811336896] [client 192.168.144.1:46702] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 01:20:33.737564 2023] [authz_core:debug] [pid 10:tid 140037794551488] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 01:20:33.737630 2023] [authz_core:debug] [pid 10:tid 140037794551488] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 01:20:33.810528 2023] [authz_core:debug] [pid 10:tid 140037802944192] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 01:20:33.810564 2023] [authz_core:debug] [pid 10:tid 140037802944192] mod_authz_core.c(815): [client 192.168.144.1:46702] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 01:20:33.810585 2023] [core:info] [pid 10:tid 140037802944192] [client 192.168.144.1:46702] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:09:46.936307 2023] [mpm_event:debug] [pid 8:tid 140038186563456] event.c(575): wake up listener
+[Mon Dec 25 09:09:46.936330 2023] [mpm_event:debug] [pid 10:tid 140038186563456] event.c(575): wake up listener
+[Mon Dec 25 09:09:46.936349 2023] [mpm_event:debug] [pid 15:tid 140038186563456] event.c(575): wake up listener
+[Mon Dec 25 09:09:46.936424 2023] [core:info] [pid 1:tid 140038186563456] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 09:09:46.936511 2023] [mpm_event:notice] [pid 1:tid 140038186563456] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 09:09:47.937783 2023] [mpm_event:debug] [pid 1:tid 140038186563456] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 09:09:47.937992 2023] [mpm_event:debug] [pid 1:tid 140038186563456] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 09:09:47.938142 2023] [mpm_event:debug] [pid 1:tid 140038186563456] event.c(715): Child 2 stopped: pid 15, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.160.3. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 09:09:51.479211 2023] [mpm_event:debug] [pid 1:tid 139925111781248] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 09:09:51.479911 2023] [mpm_event:debug] [pid 1:tid 139925111781248] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 09:09:51.479822 2023] [mpm_event:debug] [pid 8:tid 139925110339264] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:09:51.480438 2023] [mpm_event:debug] [pid 1:tid 139925111781248] event.c(740): Child 2 started: pid 14, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 09:09:51.480462 2023] [mpm_event:notice] [pid 1:tid 139925111781248] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 09:09:51.480468 2023] [mpm_event:info] [pid 1:tid 139925111781248] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 09:09:51.480487 2023] [core:notice] [pid 1:tid 139925111781248] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 09:09:51.480493 2023] [core:debug] [pid 1:tid 139925111781248] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 09:09:51.480648 2023] [mpm_event:debug] [pid 10:tid 139925110339264] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:09:51.481229 2023] [mpm_event:debug] [pid 14:tid 139925110339264] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:11:30.036094 2023] [mpm_event:debug] [pid 8:tid 139925111781248] event.c(575): wake up listener
+[Mon Dec 25 09:11:30.036143 2023] [mpm_event:debug] [pid 14:tid 139925111781248] event.c(575): wake up listener
+[Mon Dec 25 09:11:30.036256 2023] [core:info] [pid 1:tid 139925111781248] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 09:11:30.036305 2023] [mpm_event:notice] [pid 1:tid 139925111781248] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 09:11:30.036130 2023] [mpm_event:debug] [pid 10:tid 139925111781248] event.c(575): wake up listener
+[Mon Dec 25 09:11:31.037599 2023] [mpm_event:debug] [pid 1:tid 139925111781248] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 09:11:31.037771 2023] [mpm_event:debug] [pid 1:tid 139925111781248] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 09:11:31.037859 2023] [mpm_event:debug] [pid 1:tid 139925111781248] event.c(715): Child 2 stopped: pid 14, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.176.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 09:11:36.097976 2023] [mpm_event:debug] [pid 1:tid 140373819692928] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 09:11:36.098802 2023] [mpm_event:debug] [pid 1:tid 140373819692928] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 09:11:36.098726 2023] [mpm_event:debug] [pid 8:tid 140373818250944] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:11:36.099648 2023] [mpm_event:debug] [pid 1:tid 140373819692928] event.c(740): Child 2 started: pid 17, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 09:11:36.099683 2023] [mpm_event:notice] [pid 1:tid 140373819692928] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 09:11:36.099703 2023] [mpm_event:info] [pid 1:tid 140373819692928] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 09:11:36.099733 2023] [core:notice] [pid 1:tid 140373819692928] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 09:11:36.099742 2023] [core:debug] [pid 1:tid 140373819692928] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 09:11:36.099765 2023] [mpm_event:debug] [pid 10:tid 140373818250944] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:11:36.100208 2023] [mpm_event:debug] [pid 17:tid 140373818250944] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:12:47.024802 2023] [authz_core:debug] [pid 8:tid 140373809850048] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:12:47.024866 2023] [authz_core:debug] [pid 8:tid 140373809850048] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:12:47.105465 2023] [authz_core:debug] [pid 8:tid 140373801449152] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:12:47.105512 2023] [authz_core:debug] [pid 8:tid 140373801449152] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:12:47.105527 2023] [core:info] [pid 8:tid 140373801449152] [client 192.168.176.1:43822] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:12:48.137047 2023] [authz_core:debug] [pid 8:tid 140373784647360] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:12:48.137102 2023] [authz_core:debug] [pid 8:tid 140373784647360] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:12:48.204951 2023] [authz_core:debug] [pid 8:tid 140373793048256] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:12:48.205003 2023] [authz_core:debug] [pid 8:tid 140373793048256] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:12:48.205054 2023] [core:info] [pid 8:tid 140373793048256] [client 192.168.176.1:43822] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:12:48.567003 2023] [authz_core:debug] [pid 8:tid 140373776246464] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:12:48.567036 2023] [authz_core:debug] [pid 8:tid 140373776246464] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:12:48.643036 2023] [authz_core:debug] [pid 8:tid 140373767845568] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:12:48.643069 2023] [authz_core:debug] [pid 8:tid 140373767845568] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:12:48.643087 2023] [core:info] [pid 8:tid 140373767845568] [client 192.168.176.1:43822] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:12:48.737424 2023] [authz_core:debug] [pid 8:tid 140373221439168] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:12:48.737454 2023] [authz_core:debug] [pid 8:tid 140373221439168] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:12:48.809616 2023] [authz_core:debug] [pid 8:tid 140373347264192] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:12:48.809671 2023] [authz_core:debug] [pid 8:tid 140373347264192] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:12:48.809697 2023] [core:info] [pid 8:tid 140373347264192] [client 192.168.176.1:43822] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:12:49.138172 2023] [authz_core:debug] [pid 8:tid 140373338871488] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:12:49.138235 2023] [authz_core:debug] [pid 8:tid 140373338871488] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:12:49.203028 2023] [authz_core:debug] [pid 8:tid 140373330478784] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:12:49.203071 2023] [authz_core:debug] [pid 8:tid 140373330478784] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:12:49.203093 2023] [core:info] [pid 8:tid 140373330478784] [client 192.168.176.1:43822] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:12:49.324117 2023] [authz_core:debug] [pid 8:tid 140373322086080] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:12:49.324185 2023] [authz_core:debug] [pid 8:tid 140373322086080] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:12:49.382357 2023] [authz_core:debug] [pid 8:tid 140373355656896] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:12:49.382391 2023] [authz_core:debug] [pid 8:tid 140373355656896] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:12:49.382419 2023] [core:info] [pid 8:tid 140373355656896] [client 192.168.176.1:43822] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:12:49.524852 2023] [authz_core:debug] [pid 8:tid 140373196261056] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted
+[Mon Dec 25 09:12:49.524884 2023] [authz_core:debug] [pid 8:tid 140373196261056] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted
+[Mon Dec 25 09:12:49.587116 2023] [authz_core:debug] [pid 8:tid 140373305300672] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:12:49.587174 2023] [authz_core:debug] [pid 8:tid 140373305300672] mod_authz_core.c(815): [client 192.168.176.1:43822] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:12:49.587197 2023] [core:info] [pid 8:tid 140373305300672] [client 192.168.176.1:43822] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:13:01.226024 2023] [authz_core:debug] [pid 10:tid 140373809850048] mod_authz_core.c(815): [client 192.168.176.1:47264] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:13:01.226082 2023] [authz_core:debug] [pid 10:tid 140373809850048] mod_authz_core.c(815): [client 192.168.176.1:47264] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:13:01.226130 2023] [core:info] [pid 10:tid 140373809850048] [client 192.168.176.1:47264] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:13:04.102521 2023] [authz_core:debug] [pid 10:tid 140373801449152] mod_authz_core.c(815): [client 192.168.176.1:47264] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:13:04.102582 2023] [authz_core:debug] [pid 10:tid 140373801449152] mod_authz_core.c(815): [client 192.168.176.1:47264] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:13:04.102609 2023] [core:info] [pid 10:tid 140373801449152] [client 192.168.176.1:47264] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:13:08.849553 2023] [authz_core:debug] [pid 10:tid 140373793048256] mod_authz_core.c(815): [client 192.168.176.1:47264] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:13:08.849585 2023] [authz_core:debug] [pid 10:tid 140373793048256] mod_authz_core.c(815): [client 192.168.176.1:47264] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:13:08.849601 2023] [core:info] [pid 10:tid 140373793048256] [client 192.168.176.1:47264] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:18:07.038100 2023] [mpm_event:debug] [pid 8:tid 140373819692928] event.c(575): wake up listener
+[Mon Dec 25 09:18:07.038129 2023] [mpm_event:debug] [pid 10:tid 140373819692928] event.c(575): wake up listener
+[Mon Dec 25 09:18:07.038154 2023] [mpm_event:debug] [pid 17:tid 140373819692928] event.c(575): wake up listener
+[Mon Dec 25 09:18:07.038270 2023] [core:info] [pid 1:tid 140373819692928] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 09:18:07.038304 2023] [mpm_event:notice] [pid 1:tid 140373819692928] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 09:18:08.039598 2023] [mpm_event:debug] [pid 1:tid 140373819692928] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 09:18:08.039793 2023] [mpm_event:debug] [pid 1:tid 140373819692928] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 09:18:08.039883 2023] [mpm_event:debug] [pid 1:tid 140373819692928] event.c(715): Child 2 stopped: pid 17, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.192.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 09:18:11.466127 2023] [mpm_event:debug] [pid 1:tid 140633760405376] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 09:18:11.466540 2023] [mpm_event:debug] [pid 1:tid 140633760405376] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 09:18:11.466512 2023] [mpm_event:debug] [pid 8:tid 140633758963392] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:18:11.466914 2023] [mpm_event:debug] [pid 1:tid 140633760405376] event.c(740): Child 2 started: pid 14, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 09:18:11.466927 2023] [mpm_event:notice] [pid 1:tid 140633760405376] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 09:18:11.466931 2023] [mpm_event:info] [pid 1:tid 140633760405376] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 09:18:11.466946 2023] [core:notice] [pid 1:tid 140633760405376] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 09:18:11.466950 2023] [core:debug] [pid 1:tid 140633760405376] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 09:18:11.466977 2023] [mpm_event:debug] [pid 10:tid 140633758963392] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:18:11.467708 2023] [mpm_event:debug] [pid 14:tid 140633758963392] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:18:26.053182 2023] [authz_core:debug] [pid 14:tid 140633670940352] mod_authz_core.c(815): [client 192.168.192.1:58394] AH01626: authorization result of Require all granted: granted, referer: http://localhost/
+[Mon Dec 25 09:18:26.053218 2023] [authz_core:debug] [pid 14:tid 140633670940352] mod_authz_core.c(815): [client 192.168.192.1:58394] AH01626: authorization result of <RequireAny>: granted, referer: http://localhost/
+[Mon Dec 25 09:18:26.053245 2023] [core:info] [pid 14:tid 140633670940352] [client 192.168.192.1:58394] AH00128: File does not exist: /usr/local/apache2/htdocs/loadscore.php, referer: http://localhost/
+[Mon Dec 25 09:19:34.805339 2023] [mpm_event:debug] [pid 8:tid 140633760405376] event.c(575): wake up listener
+[Mon Dec 25 09:19:34.805358 2023] [mpm_event:debug] [pid 14:tid 140633760405376] event.c(575): wake up listener
+[Mon Dec 25 09:19:34.805355 2023] [mpm_event:debug] [pid 10:tid 140633760405376] event.c(575): wake up listener
+[Mon Dec 25 09:19:34.805476 2023] [core:info] [pid 1:tid 140633760405376] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 09:19:34.805501 2023] [mpm_event:notice] [pid 1:tid 140633760405376] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 09:19:35.806881 2023] [mpm_event:debug] [pid 1:tid 140633760405376] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 09:19:35.806996 2023] [mpm_event:debug] [pid 1:tid 140633760405376] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 09:19:35.807071 2023] [mpm_event:debug] [pid 1:tid 140633760405376] event.c(715): Child 2 stopped: pid 14, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.208.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 09:19:58.408578 2023] [mpm_event:debug] [pid 1:tid 139908810561408] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 09:19:58.409190 2023] [mpm_event:debug] [pid 1:tid 139908810561408] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 09:19:58.409159 2023] [mpm_event:debug] [pid 8:tid 139908809119424] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:19:58.409673 2023] [mpm_event:debug] [pid 1:tid 139908810561408] event.c(740): Child 2 started: pid 18, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 09:19:58.409690 2023] [mpm_event:notice] [pid 1:tid 139908810561408] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 09:19:58.409696 2023] [mpm_event:info] [pid 1:tid 139908810561408] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 09:19:58.409715 2023] [core:notice] [pid 1:tid 139908810561408] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 09:19:58.409721 2023] [core:debug] [pid 1:tid 139908810561408] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 09:19:58.411430 2023] [mpm_event:debug] [pid 10:tid 139908809119424] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:19:58.411608 2023] [mpm_event:debug] [pid 18:tid 139908809119424] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:20:51.218630 2023] [mpm_event:debug] [pid 8:tid 139908810561408] event.c(575): wake up listener
+[Mon Dec 25 09:20:51.218712 2023] [mpm_event:debug] [pid 18:tid 139908810561408] event.c(575): wake up listener
+[Mon Dec 25 09:20:51.218735 2023] [mpm_event:debug] [pid 10:tid 139908810561408] event.c(575): wake up listener
+[Mon Dec 25 09:20:51.218754 2023] [core:info] [pid 1:tid 139908810561408] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 09:20:51.218785 2023] [mpm_event:notice] [pid 1:tid 139908810561408] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 09:20:52.219570 2023] [mpm_event:debug] [pid 1:tid 139908810561408] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 09:20:52.219723 2023] [mpm_event:debug] [pid 1:tid 139908810561408] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 09:20:52.219825 2023] [mpm_event:debug] [pid 1:tid 139908810561408] event.c(715): Child 2 stopped: pid 18, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.224.3. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 09:21:14.190020 2023] [mpm_event:debug] [pid 1:tid 140487805331328] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 09:21:14.190574 2023] [mpm_event:debug] [pid 1:tid 140487805331328] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 09:21:14.190444 2023] [mpm_event:debug] [pid 8:tid 140487803889344] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:21:14.191007 2023] [mpm_event:debug] [pid 1:tid 140487805331328] event.c(740): Child 2 started: pid 14, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 09:21:14.191026 2023] [mpm_event:notice] [pid 1:tid 140487805331328] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 09:21:14.191033 2023] [mpm_event:info] [pid 1:tid 140487805331328] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 09:21:14.191051 2023] [core:notice] [pid 1:tid 140487805331328] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 09:21:14.191058 2023] [core:debug] [pid 1:tid 140487805331328] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 09:21:14.191221 2023] [mpm_event:debug] [pid 10:tid 140487803889344] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:21:14.191361 2023] [mpm_event:debug] [pid 14:tid 140487803889344] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:24:10.126146 2023] [mpm_event:debug] [pid 8:tid 140487805331328] event.c(575): wake up listener
+[Mon Dec 25 09:24:10.126169 2023] [mpm_event:debug] [pid 14:tid 140487805331328] event.c(575): wake up listener
+[Mon Dec 25 09:24:10.126161 2023] [mpm_event:debug] [pid 10:tid 140487805331328] event.c(575): wake up listener
+[Mon Dec 25 09:24:10.126291 2023] [core:info] [pid 1:tid 140487805331328] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 09:24:10.126319 2023] [mpm_event:notice] [pid 1:tid 140487805331328] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 09:24:11.127606 2023] [mpm_event:debug] [pid 1:tid 140487805331328] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 09:24:11.127772 2023] [mpm_event:debug] [pid 1:tid 140487805331328] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 09:24:11.127861 2023] [mpm_event:debug] [pid 1:tid 140487805331328] event.c(715): Child 2 stopped: pid 14, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.240.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 09:24:14.604100 2023] [mpm_event:debug] [pid 1:tid 140159878023040] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 09:24:14.604601 2023] [mpm_event:debug] [pid 1:tid 140159878023040] event.c(740): Child 1 started: pid 9, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 09:24:14.604647 2023] [mpm_event:debug] [pid 8:tid 140159876581056] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:24:14.605018 2023] [mpm_event:debug] [pid 1:tid 140159878023040] event.c(740): Child 2 started: pid 12, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 09:24:14.605036 2023] [mpm_event:notice] [pid 1:tid 140159878023040] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 09:24:14.605042 2023] [mpm_event:info] [pid 1:tid 140159878023040] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 09:24:14.605063 2023] [core:notice] [pid 1:tid 140159878023040] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 09:24:14.605068 2023] [core:debug] [pid 1:tid 140159878023040] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 09:24:14.605265 2023] [mpm_event:debug] [pid 9:tid 140159876581056] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:24:14.606001 2023] [mpm_event:debug] [pid 12:tid 140159876581056] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:27:16.060183 2023] [mpm_event:debug] [pid 8:tid 140159878023040] event.c(575): wake up listener
+[Mon Dec 25 09:27:16.060296 2023] [mpm_event:debug] [pid 12:tid 140159878023040] event.c(575): wake up listener
+[Mon Dec 25 09:27:16.060552 2023] [mpm_event:debug] [pid 9:tid 140159878023040] event.c(575): wake up listener
+[Mon Dec 25 09:27:16.060415 2023] [core:info] [pid 1:tid 140159878023040] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 09:27:16.060809 2023] [mpm_event:notice] [pid 1:tid 140159878023040] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 09:27:17.061915 2023] [mpm_event:debug] [pid 1:tid 140159878023040] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 09:27:17.062006 2023] [mpm_event:debug] [pid 1:tid 140159878023040] event.c(715): Child 1 stopped: pid 9, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 09:27:17.062066 2023] [mpm_event:debug] [pid 1:tid 140159878023040] event.c(715): Child 2 stopped: pid 12, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.18.0.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 09:27:53.668709 2023] [mpm_event:debug] [pid 1:tid 139838300919680] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 09:27:53.669229 2023] [mpm_event:debug] [pid 8:tid 139838299494080] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:27:53.669397 2023] [mpm_event:debug] [pid 1:tid 139838300919680] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 09:27:53.669857 2023] [mpm_event:debug] [pid 1:tid 139838300919680] event.c(740): Child 2 started: pid 17, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 09:27:53.669887 2023] [mpm_event:notice] [pid 1:tid 139838300919680] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 09:27:53.669894 2023] [mpm_event:info] [pid 1:tid 139838300919680] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 09:27:53.669919 2023] [core:notice] [pid 1:tid 139838300919680] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 09:27:53.669926 2023] [core:debug] [pid 1:tid 139838300919680] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 09:27:53.670041 2023] [mpm_event:debug] [pid 10:tid 139838299494080] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:27:53.670454 2023] [mpm_event:debug] [pid 17:tid 139838299494080] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 09:30:02.672958 2023] [mpm_event:debug] [pid 17:tid 139838300919680] event.c(575): wake up listener
+[Mon Dec 25 09:30:02.672954 2023] [mpm_event:debug] [pid 10:tid 139838300919680] event.c(575): wake up listener
+[Mon Dec 25 09:30:02.673150 2023] [mpm_event:debug] [pid 8:tid 139838300919680] event.c(575): wake up listener
+[Mon Dec 25 09:30:02.673037 2023] [core:info] [pid 1:tid 139838300919680] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 09:30:02.673301 2023] [mpm_event:notice] [pid 1:tid 139838300919680] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 09:30:03.674477 2023] [mpm_event:debug] [pid 1:tid 139838300919680] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 09:30:03.674644 2023] [mpm_event:debug] [pid 1:tid 139838300919680] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 09:30:03.674727 2023] [mpm_event:debug] [pid 1:tid 139838300919680] event.c(715): Child 2 stopped: pid 17, gen 0, active 0/16, total 0/3/16, quiescing 1
