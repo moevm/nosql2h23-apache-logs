@@ -1,0 +1,19 @@
+version: '3.6'
+
+services:
+  influxdb:
+    image: influxdb
+    container_name: influxdb
+    restart: always
+    ports:
+      - '8086:8086'
+  influxdb_cli:
+    links:
+      - influxdb
+    image: influxdb
+
+    entrypoint: influx setup --bucket ${influx_bucket:-apache_bucket} -t ${influx_token:-apache_token} -o ${influx_org:-apache_org} --username=${influx_username:-apache_admin} --password=${influx_password:-apache_password} --host=http://influxdb:8086 -f
+
+    restart: on-failure:20
+    depends_on:
+      - influxdb

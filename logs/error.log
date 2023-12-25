@@ -813,3 +813,22 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 [Mon Dec 25 10:00:27.894886 2023] [mpm_event:debug] [pid 1:tid 140266668439424] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
 [Mon Dec 25 10:00:27.895009 2023] [mpm_event:debug] [pid 1:tid 140266668439424] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
 [Mon Dec 25 10:00:27.895080 2023] [mpm_event:debug] [pid 1:tid 140266668439424] event.c(715): Child 2 stopped: pid 18, gen 0, active 0/16, total 0/3/16, quiescing 1
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.21.0.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Dec 25 11:03:46.046362 2023] [mpm_event:debug] [pid 1:tid 140332824704896] event.c(740): Child 0 started: pid 8, gen 0, active 1/16, total 1/1/16
+[Mon Dec 25 11:03:46.046874 2023] [mpm_event:debug] [pid 8:tid 140332823279296] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 11:03:46.046965 2023] [mpm_event:debug] [pid 1:tid 140332824704896] event.c(740): Child 1 started: pid 10, gen 0, active 2/16, total 2/2/16
+[Mon Dec 25 11:03:46.048091 2023] [mpm_event:debug] [pid 1:tid 140332824704896] event.c(740): Child 2 started: pid 19, gen 0, active 3/16, total 3/3/16
+[Mon Dec 25 11:03:46.048121 2023] [mpm_event:notice] [pid 1:tid 140332824704896] AH00489: Apache/2.4.58 (Unix) configured -- resuming normal operations
+[Mon Dec 25 11:03:46.048127 2023] [mpm_event:info] [pid 1:tid 140332824704896] AH00490: Server built: Nov 21 2023 13:21:54
+[Mon Dec 25 11:03:46.048150 2023] [core:notice] [pid 1:tid 140332824704896] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Dec 25 11:03:46.048156 2023] [core:debug] [pid 1:tid 140332824704896] log.c(1597): AH02639: Using SO_REUSEPORT: yes (1)
+[Mon Dec 25 11:03:46.048276 2023] [mpm_event:debug] [pid 10:tid 140332823279296] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 11:03:46.048932 2023] [mpm_event:debug] [pid 19:tid 140332823279296] event.c(2401): AH02471: start_threads: Using epoll (wakeable)
+[Mon Dec 25 11:11:12.855247 2023] [mpm_event:debug] [pid 8:tid 140332824704896] event.c(575): wake up listener
+[Mon Dec 25 11:11:12.855260 2023] [mpm_event:debug] [pid 10:tid 140332824704896] event.c(575): wake up listener
+[Mon Dec 25 11:11:12.855270 2023] [mpm_event:debug] [pid 19:tid 140332824704896] event.c(575): wake up listener
+[Mon Dec 25 11:11:12.855355 2023] [core:info] [pid 1:tid 140332824704896] AH00096: removed PID file /usr/local/apache2/logs/httpd.pid (pid=1)
+[Mon Dec 25 11:11:12.855401 2023] [mpm_event:notice] [pid 1:tid 140332824704896] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Dec 25 11:11:13.856526 2023] [mpm_event:debug] [pid 1:tid 140332824704896] event.c(715): Child 0 stopped: pid 8, gen 0, active 2/16, total 2/3/16, quiescing 1
+[Mon Dec 25 11:11:13.856619 2023] [mpm_event:debug] [pid 1:tid 140332824704896] event.c(715): Child 1 stopped: pid 10, gen 0, active 1/16, total 1/3/16, quiescing 1
+[Mon Dec 25 11:11:13.856678 2023] [mpm_event:debug] [pid 1:tid 140332824704896] event.c(715): Child 2 stopped: pid 19, gen 0, active 0/16, total 0/3/16, quiescing 1
