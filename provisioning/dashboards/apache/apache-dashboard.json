@@ -18,17 +18,106 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 1,
+  "id": 2,
   "links": [],
   "liveNow": false,
   "panels": [
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "apachelog"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 3,
+        "x": 0,
+        "y": 0
+      },
+      "id": 9,
+      "options": {
+        "SVGBaseFix": true,
+        "add100Percentage": true,
+        "calcsMutation": "standard",
+        "centerAlignContent": true,
+        "codeData": "{\n  \"text\": \"Random text\"\n}",
+        "css": "* {\n  font-family: Open Sans;\n}\n",
+        "dynamicData": true,
+        "dynamicFieldDisplayValues": false,
+        "dynamicHtmlGraphics": false,
+        "dynamicProps": false,
+        "html": "<button>Export DB time range to CSV</button>",
+        "onInit": "const btn = htmlNode.querySelector('button');\n\nconst timeoutLength = 3000;\nconst defaultButtonText = 'Export DB time range to CSV';\n\n\nconst saveCsvFile = (csv, filename) => {\n  const elt = document.createElement('a');\n  elt.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv));\n  elt.setAttribute('download', filename);\n\n  elt.style.display = 'none';\n  htmlNode.appendChild(elt);\n\n  elt.click();\n\n  htmlNode.removeChild(elt);\n};\n\n\nbtn.onclick = () => {\n  clearTimeout(btn.timeout);\n  btn.textContent = 'Exporting...';\n  // The refId (query name) only updates after a page refresh.\n  const [{ query, refId, datasource }] = data.request.targets;\n  // console.log('datasource', datasource);\n  const { from, to } = data.timeRange;\n  // console.log(Date.parse(from), Date.parse(to))\n  const filename = [refId, from.toISOString(), to.toISOString()].join('-') + '.csv';\n  const bod = 'from(bucket:\"apache_bucket\")\\n        |> range(start: ' + Date.parse(from) + ', stop:' + Date.parse(to) + ' )'\n  // console.log(bod) \n  fetch('http://localhost:8086/api/v2/query?org=apache_org', {\n    method: 'POST',\n    headers: {\n      'Authorization': 'Token apache_token',\n      'Accept': 'application/csv',\n      'Content-type': 'application/vnd.flux'\n    },\n    body: bod\n  }).then((res) => {\n      res.text().then((data) => {\n        // console.log('data', data)\n        saveCsvFile(data, filename);\n        btn.textContent = 'Export finished';\n        \n        btn.timeout = setTimeout(() => {\n          btn.textContent = defaultButtonText;\n        }, timeoutLength);\n      })\n    })\n    .catch((e) => {\n      btn.textContent = 'Export failed... (Failed retrieving data)';\n      console.warn(e);\n\n      btn.timeout = setTimeout(() => {\n        btn.textContent = defaultButtonText;\n      }, timeoutLength);\n    });\n};",
+        "onInitOnResize": false,
+        "onRender": "",
+        "overflow": "visible",
+        "panelupdateOnMount": true,
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull",
+            "last",
+            "firstNotNull",
+            "first",
+            "min",
+            "max",
+            "mean",
+            "sum",
+            "count",
+            "range",
+            "delta",
+            "step",
+            "diff",
+            "logmin",
+            "allIsZero",
+            "allIsNull",
+            "diffperc"
+          ]
+        },
+        "renderOnMount": true,
+        "rootCSS": "",
+        "useGrafanaScrollbar": true
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "influxdb",
+            "uid": "apachelog"
+          },
+          "query": "from(bucket: \"apache_bucket\")\n  |> range(start: v.timeRangeStart, stop:v.timeRangeStop)\n",
+          "refId": "A"
+        }
+      ],
+      "transparent": true,
+      "type": "gapit-htmlgraphics-panel"
+    },
     {
       "collapsed": false,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 0
+        "y": 2
       },
       "id": 2,
       "panels": [],
@@ -89,7 +178,7 @@
         "h": 11,
         "w": 24,
         "x": 0,
-        "y": 1
+        "y": 3
       },
       "id": 1,
       "options": {
@@ -155,7 +244,7 @@
         "h": 11,
         "w": 8,
         "x": 0,
-        "y": 12
+        "y": 14
       },
       "id": 6,
       "options": {
@@ -222,7 +311,7 @@
         "h": 11,
         "w": 8,
         "x": 8,
-        "y": 12
+        "y": 14
       },
       "id": 3,
       "options": {
@@ -289,7 +378,7 @@
         "h": 11,
         "w": 8,
         "x": 16,
-        "y": 12
+        "y": 14
       },
       "id": 7,
       "options": {
@@ -337,7 +426,7 @@
         "h": 11,
         "w": 24,
         "x": 0,
-        "y": 23
+        "y": 25
       },
       "id": 8,
       "options": {
@@ -370,7 +459,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 34
+        "y": 36
       },
       "id": 5,
       "panels": [],
@@ -386,7 +475,7 @@
         "h": 11,
         "w": 24,
         "x": 0,
-        "y": 35
+        "y": 37
       },
       "id": 4,
       "options": {
@@ -471,7 +560,7 @@
       {
         "allValue": "All",
         "current": {
-          "selected": true,
+          "selected": false,
           "text": "All",
           "value": "$__all"
         },
@@ -496,7 +585,7 @@
       {
         "allValue": "All",
         "current": {
-          "selected": true,
+          "selected": false,
           "text": "All",
           "value": "$__all"
         },
@@ -521,7 +610,7 @@
     ]
   },
   "time": {
-    "from": "now-24h",
+    "from": "now-1y",
     "to": "now"
   },
   "timepicker": {},
