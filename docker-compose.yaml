@@ -6,9 +6,9 @@ services:
     container_name: apache
     restart: always
     ports:
-      - 80:80
-      - 8060:8060
-      - 8070:8070
+      - '0.0.0.0:80:80'
+      - '0.0.0.0:8060:8060'
+      - '0.0.0.0:8070:8070'
     volumes:
       - ./http-files:/usr/local/apache2/htdocs:ro
       - ./httpd.conf:/usr/local/apache2/conf/httpd.conf:ro
@@ -18,7 +18,9 @@ services:
     container_name: influxdb
     restart: always
     ports:
-      - '8086:8086'
+      - '127.0.0.1:8086:8086'
+    volumes:
+      - ./dbdata:/var/lib/influxdb2/engine/data:rw
   influxdb_cli:
     links:
       - influxdb
@@ -49,7 +51,7 @@ services:
     links:
       - influxdb
     ports:
-      - 8125:8125
+      - '127.0.0.1:8125:8125'
   grafana:
     image: grafana/grafana
     container_name: grafana-server
@@ -63,10 +65,11 @@ services:
       - GF_SECURITY_ADMIN_USER=${grafana_username:-admin}
       - GF_SECURITY_ADMIN_PASSWORD=${grafana_password:-admin123}
       - GF_SERVER_HTTP_PORT=3000
+      - GF_INSTALL_PLUGINS=gapit-htmlgraphics-panel
       - INFLUXDB_ORG=${influx_org:-apache_org}
       - INFLUXDB_BUCKET=${influx_bucket:-apache_bucket}
       - INFLUXDB_TOKEN=${influx_token:-apache_token}
     links:
       - influxdb
     ports:
-      - 3000:3000
+      - '0.0.0.0:3000:3000'
