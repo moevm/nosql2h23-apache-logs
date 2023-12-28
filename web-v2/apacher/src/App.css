@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  height: 99vh;
+  width: 99vw;
+}
+
+button {
+  background-color: #111217;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 0.5rem;
+  color: #AFBCD0;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #22242e;
+}

@@ -1,0 +1,14 @@
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 30vh;
+  border-radius: 20px;
+  background-color: #181B1F;
+}
+
+.authBtn {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  width: 10vw;
+}

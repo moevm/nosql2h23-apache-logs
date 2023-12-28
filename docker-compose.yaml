@@ -19,6 +19,8 @@ services:
     restart: always
     ports:
       - '127.0.0.1:8086:8086'
+    environment:
+      - INFLUXD_LOG_LEVEL=debug
     volumes:
       - ./dbdata:/var/lib/influxdb2/engine/data:rw
   influxdb_cli:
@@ -52,24 +54,42 @@ services:
       - influxdb
     ports:
       - '127.0.0.1:8125:8125'
-  grafana:
-    image: grafana/grafana
-    container_name: grafana-server
+  expresser:
+    image: expresser
+    container_name: expresser
     restart: always
-    volumes:
-      - ./provisioning/datasources:/etc/grafana/provisioning/datasources:rw
-      - ./provisioning/dashboards:/etc/grafana/provisioning/dashboards:rw
-    depends_on:
-      - influxdb
-    environment:
-      - GF_SECURITY_ADMIN_USER=${grafana_username:-admin}
-      - GF_SECURITY_ADMIN_PASSWORD=${grafana_password:-admin123}
-      - GF_SERVER_HTTP_PORT=3000
-      - GF_INSTALL_PLUGINS=gapit-htmlgraphics-panel
-      - INFLUXDB_ORG=${influx_org:-apache_org}
-      - INFLUXDB_BUCKET=${influx_bucket:-apache_bucket}
-      - INFLUXDB_TOKEN=${influx_token:-apache_token}
-    links:
-      - influxdb
+    build:
+      context: ./web-v2/expresser
+      dockerfile: Dockerfile
+      target: base
     ports:
-      - '0.0.0.0:3000:3000'
+      - '127.0.0.1:4000:4000'
+  apacher:
+    image: httpd
+    container_name: apacher
+    restart: always
+    ports:
+      - '0.0.0.0:3000:80'
+    volumes:
+      - ./web-v2/apacher/build:/usr/local/apache2/htdocs:ro
+  # grafana:
+  #   image: grafana/grafana
+  #   container_name: grafana-server
+  #   restart: always
+  #   volumes:
+  #     - ./provisioning/datasources:/etc/grafana/provisioning/datasources:rw
+  #     - ./provisioning/dashboards:/etc/grafana/provisioning/dashboards:rw
+  #   depends_on:
+  #     - influxdb
+  #   environment:
+  #     - GF_SECURITY_ADMIN_USER=${grafana_username:-admin}
+  #     - GF_SECURITY_ADMIN_PASSWORD=${grafana_password:-admin123}
+  #     - GF_SERVER_HTTP_PORT=3000
+  #     - GF_INSTALL_PLUGINS=gapit-htmlgraphics-panel
+  #     - INFLUXDB_ORG=${influx_org:-apache_org}
+  #     - INFLUXDB_BUCKET=${influx_bucket:-apache_bucket}
+  #     - INFLUXDB_TOKEN=${influx_token:-apache_token}
+  #   links:
+  #     - influxdb
+  #   ports:
+  #     - '0.0.0.0:3000:3000'

@@ -1,0 +1,24 @@
+.Dashboard {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  padding: 1rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: inherit;
+  height: fit-content;
+  background-color: #181B1F;
+}
+
+.header * {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.frmcntrl {
+  width: 30em;
+}

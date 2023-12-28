@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  express:
+    image: express
+    container_name: express
+    restart: always
+    build:
+      context: ./expresser
+      dockerfile: Dockerfile
+      target: base
+    ports:
+      - '0.0.0.0:4000:4000'
